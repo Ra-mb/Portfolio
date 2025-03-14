@@ -1,9 +1,8 @@
-# Retail Sales Analysis SQL Project
+# Chocolate Sales Analysis SQL Project
 
 ## Project Overview
 
 **Project Title**: Chocolate Sales Analysis  
-**Level**: Beginner  
 **Database**: `cho_sales`
 
 This project is designed to demonstrate SQL skills and techniques typically used by data analysts to explore, clean, and analyze chocolate sales data. The project involves import database from csv file, performing exploratory data analysis (EDA), and answering specific business questions through SQL queries.
