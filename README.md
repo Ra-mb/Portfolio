@@ -142,6 +142,6 @@ LIMIT 1;
 My social media:
 
 - **Instagram**: [Let's Connect](https://www.instagram.com/inirtp?igsh=MW9xZTU0bTRuaHlxeQ==)
-- **LinkedIn**: [Connect with me professionally]((https://www.linkedin.com/in/rahadian-triaji-pramudito-a43949273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app))
+- **LinkedIn**: [Connect with me professionally](https://www.linkedin.com/in/rahadian-triaji-pramudito-a43949273/)
 
 I look forward to connecting with you!
