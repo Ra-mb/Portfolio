@@ -21,6 +21,8 @@ This project is designed to demonstrate SQL skills and techniques typically used
 
 - **Database Creation**: The project starts by import a database from `cho_sales.csv`.
 
+  ![Database](Images/dataset.png)
+
 
 ### 2. Data Cleaning
 
@@ -138,6 +140,9 @@ LIMIT 1;
 - **Sales Summary**: A detailed report summarizing total sales per months, sales person performance, biggest markets.
 - **Trend Analysis**: Insights into sales trends across different months and countries.
 - **Product Insights**: Reports on top selling products.
+
+## Visualization 
+![Visualization](Images/Dashboard.png)
 
 My social media:
 
