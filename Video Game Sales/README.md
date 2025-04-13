@@ -1,25 +1,24 @@
-# Chocolate Sales Analysis SQL Project
+# Video Game Sales Mini Project
 
 ## Project Overview
 
-**Project Title**: Chocolate Sales Analysis  
-**Database**: `cho_sales`
+**Project Title**: Video Game Sales Analysis  
 
-This project is designed to demonstrate SQL skills and techniques typically used by data analysts to explore, clean, and analyze chocolate sales data. The project involves import database from csv file, performing exploratory data analysis (EDA), and answering specific business questions through SQL queries.
+This project is designed to demonstrate SQL skills and techniques typically used by data analysts to explore, clean, and analyze video game sales data. The project involves import database from csv file, performing cleaning data, and answering specific business questions using Python, SQL, and Tableau.
 
 ## Objectives
 
-1. **Import chocolate sales database**: Import Chocolate sales database from csv.
-2. **Data Cleaning**: Identify and remove any records with missing or null values.
-3. **Standardizing Data**: Identify and standardize any records to give a better visualization.
-4. **Exploratory Data Analysis (EDA)**: Perform basic exploratory data analysis to understand the dataset.
-5. **Business Analysis**: Use SQL to answer specific business questions and derive insights from the sales data.
+1. **Dataset From Kaggle**: Download video game sales dataset from kaggle.
+2. **Correlation Analysis**: Because we gonna sales trend in many years and accross some country. We need to check column that has strong correlation with main columns which is Global Sales.
+3. **Data Cleaning**: Identify and remove any records with missing or null values and drop any column that has weak correlation with Global Sales and are not relevant to the business question.
+5. **Exploratory Data Analysis (EDA)**: Perform basic exploratory data analysis to understand the dataset.
+6. **Business Analysis**: Use SQL to answer specific business questions and derive insights from the sales data.
 
 ## Project Structure
 
 ### 1. Database Setup
 
-- **Database Creation**: The project starts by import a database from `cho_sales.csv`.
+- **Database Creation**: The project starts by import a database from `game.xlsx`.
 
   ![Database](Images/dataset.png)
 
