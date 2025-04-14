@@ -18,107 +18,140 @@ This project is designed to demonstrate SQL skills and techniques typically used
 
 ### 1. Database Setup
 
-- **Database Creation**: The project starts by import a database from `game.xlsx`.
+- **Database Creation**: The project starts by import a database from `vgsales.csv`.
 
   ![Database](Images/dataset.png)
 
 
 ### 2. Data Cleaning
 
-- **Create a new database**: Create a new database to do a data transformations, cleaning etc to make sure if any misquery, i don't lose the data.
-- **Remove Duplicate**: Remove any duplicate record.
-- **Standardize Data**: Ensure the data ready for analysis.
+- **Import database**: Importing dataset using pandas.
+- **Correlation Analysis**: Because we gonna sales trend in many years and accross some country. We need to check column that has strong correlation with main columns which is Global Sales.
+- **Remove Columns**: Remove column that have a correlation value of 0 to global sales. but still consider according to analysis needs
 - **Null Value Check**: Check for any null values in the dataset and delete records with missing data.
-- **Remove Columns**: Remove column that unused such as row_num. 
+ 
 
-```sql
-CREATE TABLE `cho_sales2` (
-  `sales_name` varchar(100) DEFAULT NULL,
-  `country` varchar(100) DEFAULT NULL,
-  `product` varchar(100) DEFAULT NULL,
-  `sale_date` text,
-  `amount` int DEFAULT NULL,
-  `box_shipped` int DEFAULT NULL,
-  `row_num` INT
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+```python
+import pandas as pd
 
-INSERT INTO cho_sales2
-SELECT *,
-ROW_NUMBER() OVER
-(PARTITION BY sales_name, country, product, sale_date, amount, box_shipped) as row_num
-FROM cho_sales;
+# Load dataset
+data = pd.read_excel("sales.xlsx")
 
-DELETE
-FROM cho_sales2
-WHERE row_num > 1;
+# One-hot encoding for categorical columns
+data = pd.get_dummies(data, columns=["Platform", "Genre", "Publisher"], drop_first=True)
 
-UPDATE cho_sales2
-SET sale_date = str_to_date(sale_date, '%d/%m/%Y');
+# Calculate the correlation matrix
+correlation = data.corr()
 
-ALTER TABLE cho_sales2
-MODIFY COLUMN sale_date DATE;
+# Take correlation only against target column (Global_Sales)
+correlation_with_sales = correlation["Global_Sales"].sort_values(ascending=False)
 
-SELECT DISTINCT country
-FROM cho_sales2;
+# Show results
+print("Korelasi dengan Global_Sales:")
+print(correlation_with_sales)
 
-UPDATE cho_sales2
-SET country = TRIM(TRAILING '.' FROM country)
-WHERE country LIKE 'Australia%';
+Korelasi dengan Global_Sales:
+Global_Sales                    1.000000
+north_america_sales             0.941269
+europe_sales                    0.903264
+Other_Sales                     0.747964
+japan_sales                     0.612774
+                                  ...   
+Publisher_Namco Bandai Games   -0.041960
+Platform_PC                    -0.042483
+Platform_PSP                   -0.053402
+Genre_Adventure                -0.066303
+Year                           -0.074647
+Name: Global_Sales, Length: 622, dtype: float64
 
-SELECT *
-FROM cho_sales2
-WHERE product IS NULL OR product = '' 
-   OR sales_name IS NULL OR sales_name = '' 
-   OR country IS NULL OR country = '' 
-   OR sale_date IS NULL 
-   OR amount IS NULL 
-   OR box_shipped IS NULL;
+columns_to_drop = ['Rank','Name', 'Publisher']
+df.drop(columns_to_drop, axis=1, inplace=True)
 
-DELETE 
-FROM cho_sales2
-WHERE product = '';
+# NOTE : I maintain the platform, genre and year columns taking into account the purpose of the analysis.
+```
+```Python
+#Standardize Data
+df = df.rename(columns = {'NA_Sales' : 'north_america_sales', 'EU_Sales' : 'europe_sales', 'JP_Sales' : 'japan_sales'})
 
-ALTER TABLE cho_sales2
-DROP COLUMN row_num;
+#Check Null Values and drop it
+df.isnull().any()
+
+Platform               False
+Year                    True
+Genre                  False
+north_america_sales    False
+europe_sales           False
+japan_sales            False
+Other_Sales            False
+Global_Sales           False
+dtype: bool
+
+df = df.dropna()
+df.isnull().any()
+
+Platform               False
+Year                   False
+Genre                  False
+north_america_sales    False
+europe_sales           False
+japan_sales            False
+Other_Sales            False
+Global_Sales           False
+dtype: bool
+
+# Than export file
+df.to_csv('game.csv', index=False)
 ```
 
 ### 3. Data Analysis & Findings
 
+From here we use the file that was cleaned earlier. 
+  ![Database](Images/datasetjadi.png)
+
 The following SQL queries were developed to answer questions:
 
-1. **Write a SQL query to retrieve sales person who make the highest revenue**:
-```sql
-SELECT
-    sales_name,
-    SUM(amount) AS penjualan
-FROM cho_sales2
-GROUP BY sales_name
-ORDER BY penjualan DESC;
-```
-
-2. **Write a SQL query to retrieve total sales in each country**:
-```sql
-SELECT
-    country,
-    EXTRACT(MONTH FROM sale_date) as month,
-    SUM(amount)
-FROM cho_sales2
-GROUP BY country;
-```
-
-3. **Write a SQL query to retrieve best-selling product**:
-```sql
-SELECT
-    product,
-    SUM(amount) as product_sales_sum
-FROM cho_sales2
-GROUP BY product
-ORDER BY product_sales_sum DESC;
-```
-
-4. **Write a SQL query to calculate the average sale for each month. Find out best selling month**:
+1. **Analysis of total global sales per year.**:
 ```sql
 SELECT 
+	Year, 
+	ROUND(SUM(Global_Sales),2) as total_sales
+FROM game
+GROUP BY Year
+ORDER BY total_sales DESC;
+```
+
+2. **Platform Popularity Analysis**:
+```sql 
+SELECT 
+	Platform, 
+    ROUND(SUM(Global_Sales),2) as total_sales
+FROM game
+GROUP BY Platform
+ORDER BY total_sales DESC;
+```
+
+3. **Analysis of the Most Profitable Genres**:
+```sql
+SELECT 
+	Genre, 
+    ROUND(SUM(Global_Sales),2) as total_sales
+FROM game
+GROUP BY Genre
+ORDER BY total_sales DESC;
+```
+
+4. **Analysis of the Most Profitable Genres in Some Countries**:
+```sql
+SELECT 
+	Genre, 
+    ROUND(SUM(north_america_sales),2) as north_america_region,
+    ROUND(SUM(europe_sales),2) as europe_region,
+    ROUND(SUM(japan_sales),2) as japan_region,
+    ROUND(SUM(Other_Sales),2) as other_region,
+    ROUND(SUM(Global_Sales),2) as total_sales
+FROM game
+GROUP BY Genre
+ORDER BY total_sales DESC;SELECT 
     EXTRACT(MONTH FROM sale_date) as month,
     AVG(amount) as avg_sale
 FROM cho_sales2
@@ -129,19 +162,20 @@ LIMIT 1;
 
 ## Findings
 
-- **Sales Trends**: Monthly analysis shows variations in sales, helping identify peak seasons.
-- **Customer Insights**: The analysis identifies the most popular chocolate product.
-- **Biggest Markets**: Total sales in each Country helping identify which country has the biggest spending to buy chocolate.
-- **Sales Trends**: Helping identify and set to more targeted strategies for that specific month.  
+- **Sales Trends**: Yearly analysis shows variations in sales, helping identify peak seasons.
+- **Popular Genre**: The analysis identifies the most profitable Genre.
+- **Platform Popularity**: Determine which platforms contribute the most to global sales.
+- **Most Profitable Genres in Several Regions**: Analysis of the most successful platforms and genres in several regions.
 
 ## Reports
 
-- **Sales Summary**: A detailed report summarizing total sales per months, sales person performance, biggest markets.
-- **Trend Analysis**: Insights into sales trends across different months and countries.
-- **Product Insights**: Reports on top selling products.
+- **Sales Summary**: A detailed report summarizing total sales several years, Genre and Platform popularity, biggest markets.
+- **Trend Analysis**: Insights into sales trends in several years and regions.
+- **Product Insights**: Reports on top selling games.
 
 ## Visualization 
-![Visualization](Images/Dashboard.png)
+**Using Tableau**
+![Visualization](Images/dashboard.png)
 
 My social media:
 
