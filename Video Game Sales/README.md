@@ -106,6 +106,7 @@ df.to_csv('game.csv', index=False)
 ### 3. Data Analysis & Findings
 
 From here we use the file that was cleaned earlier. 
+
   ![Database](Images/datasetjadi.png)
 
 The following SQL queries were developed to answer questions:
