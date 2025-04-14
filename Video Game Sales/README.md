@@ -18,7 +18,7 @@ This project is designed to demonstrate SQL skills and techniques typically used
 
 ### 1. Database Setup
 
-- **Database Creation**: The project starts by import a database from `vgsales.csv`.
+- **Database Creation**: The project starts by import a database from `game.xlsx`.
 
   ![Database](Images/dataset.png)
 
@@ -35,39 +35,39 @@ This project is designed to demonstrate SQL skills and techniques typically used
 import pandas as pd
 
 # Load dataset
-data = pd.read_excel("sales.xlsx")
+data = pd.read_excel("game.xlsx")
 
-# One-hot encoding for categorical columns
+# One-hot encoding untuk kolom kategorikal
 data = pd.get_dummies(data, columns=["Platform", "Genre", "Publisher"], drop_first=True)
 
-# Calculate the correlation matrix
+# Hitung matriks korelasi
 correlation = data.corr()
 
-# Take correlation only against target column (Global_Sales)
+# Ambil korelasi hanya terhadap kolom target (Global_Sales)
 correlation_with_sales = correlation["Global_Sales"].sort_values(ascending=False)
 
-# Show results
+# Tampilkan hasil
 print("Korelasi dengan Global_Sales:")
 print(correlation_with_sales)
 
 Korelasi dengan Global_Sales:
 Global_Sales                    1.000000
-north_america_sales             0.941269
-europe_sales                    0.903264
-Other_Sales                     0.747964
-japan_sales                     0.612774
+NA_Sales                        0.941047
+EU_Sales                        0.902836
+Other_Sales                     0.748331
+JP_Sales                        0.611816
                                   ...   
-Publisher_Namco Bandai Games   -0.041960
-Platform_PC                    -0.042483
-Platform_PSP                   -0.053402
-Genre_Adventure                -0.066303
-Year                           -0.074647
-Name: Global_Sales, Length: 622, dtype: float64
+Publisher_Namco Bandai Games   -0.041538
+Platform_PC                    -0.042677
+Platform_PSP                   -0.052942
+Genre_Adventure                -0.065521
+Year                           -0.074735
+Name: Global_Sales, Length: 624, dtype: float64
 
-columns_to_drop = ['Rank','Name', 'Publisher']
+columns_to_drop = ['Publisher']
 df.drop(columns_to_drop, axis=1, inplace=True)
 
-# NOTE : I maintain the platform, genre and year columns taking into account the purpose of the analysis.
+Note : I retain year, genre and platform for analysis purposes
 ```
 ```Python
 #Standardize Data
@@ -105,7 +105,7 @@ df.to_csv('game.csv', index=False)
 
 ### 3. Data Analysis & Findings
 
-From here we use the file that was cleaned earlier. 
+From here we use the file that was cleaned earlier `game_clean.csv`. 
 
   ![Database](Images/datasetjadi.png)
 
