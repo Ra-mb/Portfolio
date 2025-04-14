@@ -8,7 +8,7 @@ This project is designed to demonstrate SQL skills and techniques typically used
 
 ## Objectives
 
-1. **Dataset From Kaggle**: Download video game sales dataset from kaggle.
+1. **Prepare Dataset**: Download video game sales dataset.
 2. **Correlation Analysis**: Because we gonna sales trend in many years and accross some country. We need to check column that has strong correlation with main columns which is Global Sales.
 3. **Data Cleaning**: Identify and remove any records with missing or null values and drop any column that has weak correlation with Global Sales and are not relevant to the business question.
 5. **Exploratory Data Analysis (EDA)**: Perform basic exploratory data analysis to understand the dataset.
@@ -20,7 +20,7 @@ This project is designed to demonstrate SQL skills and techniques typically used
 
 - **Database Creation**: The project starts by import a database from `game.xlsx`.
 
-  ![Database](Images/dataset.png)
+  ![Database](Images/dataset.jpeg)
 
 
 ### 2. Data Cleaning
@@ -100,14 +100,14 @@ Global_Sales           False
 dtype: bool
 
 # Than export file
-df.to_csv('game.csv', index=False)
+df.to_csv('game_clean.csv', index=False)
 ```
 
 ### 3. Data Analysis & Findings
 
 From here we use the file that was cleaned earlier `game_clean.csv`. 
 
-  ![Database](Images/datasetjadi.png)
+  ![Database](Images/datasetjadi.jpeg)
 
 The following SQL queries were developed to answer questions:
 
