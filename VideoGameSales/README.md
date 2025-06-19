@@ -22,10 +22,15 @@ Kaggle Dataset → Python (Data Cleaning) → SQL (Analytical Queries) → Table
 ## 2. Analytical Case Studies (SQL)
 Dilakukan analisis untuk lima studi kasus utama:
 | Studi Kasus | Deskripsi | 
+
 | A. Global Sales Timeline | Tren penjualan game dari tahun ke tahun | 
+
 | B. Genre Dominance Map | Genre paling menguntungkan secara global | 
+
 | C. Regional Performance | Genre terkuat per wilayah (NA, EU, JP, Other) | 
+
 | D. Platform Power Play | Platform dengan penjualan tertinggi sepanjang sejarah | 
+
 | E. Publisher Footprint | Kontribusi publisher terhadap keberagaman genre dan region | 
 
 **Query SQL: portofolio.sql**
