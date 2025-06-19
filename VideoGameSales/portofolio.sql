@@ -54,9 +54,10 @@ FROM game
 GROUP BY Genre
 ORDER BY total_sales DESC;
 
+-- 5. Analysis of the Most Profitbale Genres in Japan
 SELECT 
-	SUM(Global_Sales) as total_pendapatan,
-	substring(Year, 1, 2) as century
+	Genre,
+	ROUND(SUM(japan_sales),2) as japan_sales
 FROM game
-GROUP BY century
-ORDER BY century;
+GROUP BY Genre
+ORDER BY japan_sales DESC;
