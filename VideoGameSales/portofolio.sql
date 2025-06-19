@@ -53,10 +53,3 @@ SELECT
 FROM game
 GROUP BY Genre
 ORDER BY total_sales DESC;
-
--- 5. Analysis of the Most Profitbale Genres in Japan
-SELECT 
-	Genre,
-	ROUND(SUM(japan_sales),2) as japan_sales
-FROM game
-GROUP BY Genre;
