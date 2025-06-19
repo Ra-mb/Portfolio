@@ -40,7 +40,7 @@ Dilakukan analisis untuk lima studi kasus utama:
 - Semua visual disusun untuk mendukung simulasi pitch ke publisher game
 - 
 **Preview Visualisasi:**
- ![Dashboard](Images/Dashboard.png)
+ ![Dashboard](Images/Dashboard.jpeg)
 
 📝 4. Executive Summary & Recommendations
 “Genre Action dan Sports mendominasi secara global. Namun, genre Role-Playing menunjukkan kekuatan luar biasa di Jepang. Berdasarkan tren historis dan potensi wilayah, kami merekomendasikan fokus pengembangan judul lintas-genre dengan multiplatform release di Switch dan PS4 untuk pasar Jepang dan Eropa.”
