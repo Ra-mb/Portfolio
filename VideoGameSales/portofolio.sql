@@ -59,5 +59,4 @@ SELECT
 	Genre,
 	ROUND(SUM(japan_sales),2) as japan_sales
 FROM game
-GROUP BY Genre
-ORDER BY japan_sales DESC;
+GROUP BY Genre;
