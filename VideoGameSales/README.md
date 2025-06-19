@@ -8,8 +8,8 @@ Kaggle Dataset → Python (Data Cleaning) → SQL (Analytical Queries) → Table
 
 
 ## 1. Data Acquisition & Cleaning (Python)
-- Dataset diunduh dari Kaggle: 
-- Data dibersihkan dengan mempertimbangkan:
+- Dataset diunduh dari Kaggle
+- Data dibersihkan
 - Menghapus nilai null pada kolom Year, Global_Sales, dan Genre
 - Menstandarisasi format kolom (uppercase, titlecase)
 - Mengubah kolom Year menjadi numeric (integer) untuk visualisasi kronologis
@@ -17,7 +17,7 @@ Kaggle Dataset → Python (Data Cleaning) → SQL (Analytical Queries) → Table
   
 **File Notebook: Portofolio Game Sales.ipynb**
 
-**Output CSV: vgsales.csv**
+**Output CSV: portfolio.xlsx**
 
    ![Dataset](Images/dataset.jpeg)
   
