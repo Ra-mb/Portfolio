@@ -14,7 +14,9 @@ Kaggle Dataset → Python (Data Cleaning) → SQL (Analytical Queries) → Table
 - Menstandarisasi format kolom (uppercase, titlecase)
 - Mengubah kolom Year menjadi numeric (integer) untuk visualisasi kronologis
 - Simpan data bersih ke file .csv untuk digunakan di SQL dan Tableau
+  
 **File Notebook: Portofolio Game Sales.ipynb**
+
 **Output CSV: vgsales.csv**
 
    ![Dataset](Images/dataset.jpeg)
