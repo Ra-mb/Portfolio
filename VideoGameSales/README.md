@@ -38,7 +38,7 @@ Dilakukan analisis untuk lima studi kasus utama:
 **Query SQL: portofolio.sql**
 **Output per kasus: disimpan sebagai .csv dan digunakan di Tableau**
 
-## 3. Visualization Dashboard (Tableau)##
+## 3. Visualization Dashboard (Tableau)
 
 - Visualisasi interaktif mencakup:
 - Line chart untuk tren penjualan global
@@ -50,7 +50,7 @@ Dilakukan analisis untuk lima studi kasus utama:
 **Preview Visualisasi:**
  ![Dashboard](Images/Dashboard.jpeg)
 
-## 4. Executive Summary & Recommendations##
+## 4. Executive Summary & Recommendations
 
 Genre Action dan Sports mendominasi secara global. Namun, genre Role-Playing menunjukkan kekuatan luar biasa di Jepang. Berdasarkan tren historis dan potensi wilayah, kami merekomendasikan fokus pengembangan judul lintas-genre dengan multiplatform release di Switch dan PS4 untuk pasar Jepang dan Eropa.
 
