@@ -27,7 +27,7 @@ Dilakukan analisis untuk lima studi kasus utama:
 
 | B. Genre Dominance Map | Genre paling menguntungkan secara global | 
 
-| C. Regional Performance | Genre terkuat per wilayah (NA, EU, JP, Other) | 
+| C. Regional Performance | Genre terkuat per wilayah (NA (North America), EU (Europe), JP (Japan), Other) | 
 
 | D. Platform Power Play | Platform dengan penjualan tertinggi sepanjang sejarah | 
 
@@ -36,7 +36,8 @@ Dilakukan analisis untuk lima studi kasus utama:
 **Query SQL: portofolio.sql**
 **Output per kasus: disimpan sebagai .csv dan digunakan di Tableau**
 
-📊 3. Visualization Dashboard (Tableau)
+## 3. Visualization Dashboard (Tableau)##
+
 - Visualisasi interaktif mencakup:
 - Line chart untuk tren penjualan global
 - Bar chart genre terpopuler secara global dan per region
@@ -47,16 +48,18 @@ Dilakukan analisis untuk lima studi kasus utama:
 **Preview Visualisasi:**
  ![Dashboard](Images/Dashboard.jpeg)
 
-📝 4. Executive Summary & Recommendations
-“Genre Action dan Sports mendominasi secara global. Namun, genre Role-Playing menunjukkan kekuatan luar biasa di Jepang. Berdasarkan tren historis dan potensi wilayah, kami merekomendasikan fokus pengembangan judul lintas-genre dengan multiplatform release di Switch dan PS4 untuk pasar Jepang dan Eropa.”
+## 4. Executive Summary & Recommendations##
+
+Genre Action dan Sports mendominasi secara global. Namun, genre Role-Playing menunjukkan kekuatan luar biasa di Jepang. Berdasarkan tren historis dan potensi wilayah, kami merekomendasikan fokus pengembangan judul lintas-genre dengan multiplatform release di Switch dan PS4 untuk pasar Jepang dan Eropa.
 
 
-💻 Tech Stack
+**Tech Stack**
 - Python (Pandas)
 - MySQL 
 - Tableau Public
 
 🙋‍♂️ About Me
+
 Saya Rahadian — peminat logika deduktif, storytelling visual, dan analisis berbasis data. Saya menikmati membangun insight dari potongan puzzle data yang tersebar—baik sebagai analis, detektif, atau arsitek visualisasi. Silakan lihat repositori lain saya untuk logika puzzle, SQL challenges, dan proyek visualisasi data lainnya.
 
 Linkedin : 
