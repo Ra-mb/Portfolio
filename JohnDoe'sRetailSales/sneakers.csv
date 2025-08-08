@@ -1,0 +1,354 @@
+Date,Product Name,Product Type,Brand,Gender,Category,Country,Quantity,Unit Price ($),Amount ($),Payment Mode
+2022-05-27,Fear of God Essentials Tee,T-shirt,Essentials,Unisex,Limited Edition,Japan,5,141.82,709.1,Card
+2022-08-22,Yeezy Boost 350,Sneakers,Adidas,Unisex,Streetwear,USA,2,267.34,534.68,Cash on Delivery
+2022-04-03,Nike Dunk Low,Sneakers,Nike,Women,Limited Edition,Germany,1,292.0,292.0,Cash on Delivery
+2022-07-13,Nike Tech Fleece,Hoodie,Nike,Men,Limited Edition,USA,4,245.44,981.76,Cash on Delivery
+2022-08-25,Jordan 1 High,Sneakers,Nike,Women,Casual,Australia,2,184.51,369.02,Cash on Delivery
+2022-02-23,Yeezy Boost 350,Sneakers,Adidas,Women,Casual,UK,2,128.86,257.72,UPI
+2022-07-12,Fear of God Essentials Tee,T-shirt,Essentials,Women,Limited Edition,Germany,1,207.85,207.85,Wallet
+2022-07-14,Off-White Hoodie,Hoodie,Off-White,Men,Streetwear,Canada,2,163.32,326.64,UPI
+2022-06-20,Jordan 1 High,Sneakers,Nike,Women,Streetwear,USA,3,199.47,598.41,Wallet
+2022-01-02,Jordan 1 High,Sneakers,Nike,Unisex,Sportswear,Japan,4,298.22,1192.88,Wallet
+2022-06-25,Yeezy Boost 350,Sneakers,Adidas,Men,Limited Edition,USA,1,117.18,117.18,Cash on Delivery
+2022-01-31,Supreme Hoodie,Hoodie,Supreme,Women,Casual,Germany,2,240.23,480.46,Cash on Delivery
+2022-08-26,Nike Dunk Low,Sneakers,Nike,Women,Casual,Germany,3,295.75,887.25,Card
+2022-02-08,Supreme Hoodie,Hoodie,Supreme,Unisex,Casual,India,1,54.44,54.44,Cash on Delivery
+2022-08-25,Adidas Ultraboost,Sneakers,Adidas,Unisex,Casual,USA,1,104.16,104.16,Wallet
+2022-05-15,Nike Dunk Low,Sneakers,Nike,Women,Casual,UK,5,64.66,323.3,Card
+2022-01-27,Supreme Hoodie,Hoodie,Supreme,Men,Streetwear,Germany,3,114.29,342.87,UPI
+2022-04-02,New Era Cap,Cap,New Era,Women,Sportswear,Germany,1,167.77,167.77,Cash on Delivery
+2022-07-11,Fear of God Essentials Tee,T-shirt,Essentials,Women,Sportswear,India,3,167.36,502.08,UPI
+2022-08-18,Nike Dunk Low,Sneakers,Nike,Unisex,Streetwear,India,4,295.53,1182.12,Wallet
+2022-04-08,New Era Cap,Cap,New Era,Men,Limited Edition,UK,4,107.31,429.24,UPI
+2022-06-07,Nike Tech Fleece,Hoodie,Nike,Unisex,Sportswear,Germany,5,119.54,597.7,Card
+2022-05-07,New Era Cap,Cap,New Era,Men,Sportswear,USA,3,295.25,885.75,Wallet
+2022-05-28,Adidas Ultraboost,Sneakers,Adidas,Unisex,Sportswear,UK,4,63.73,254.92,Card
+2022-06-25,Nike Tech Fleece,Hoodie,Nike,Men,Streetwear,UK,4,86.13,344.52,UPI
+2022-03-24,Jordan 1 High,Sneakers,Nike,Men,Limited Edition,Japan,4,172.68,690.72,UPI
+2022-02-25,Puma Joggers,Joggers,Puma,Women,Streetwear,UK,5,203.5,1017.5,Card
+2022-05-15,Nike Tech Fleece,Hoodie,Nike,Unisex,Limited Edition,Germany,3,200.92,602.76,Cash on Delivery
+2022-03-31,Supreme Hoodie,Hoodie,Supreme,Women,Sportswear,Germany,1,251.98,251.98,Card
+2022-08-10,Puma Joggers,Joggers,Puma,Men,Streetwear,Japan,4,121.9,487.6,Card
+2022-04-26,Off-White Hoodie,Hoodie,Off-White,Unisex,Streetwear,USA,4,258.82,1035.28,Cash on Delivery
+2022-02-24,Nike Dunk Low,Sneakers,Nike,Women,Sportswear,USA,2,203.05,406.1,Cash on Delivery
+2022-01-07,Puma Joggers,Joggers,Puma,Women,Limited Edition,UK,2,130.05,260.1,Wallet
+2022-06-28,New Era Cap,Cap,New Era,Women,Casual,Canada,4,185.54,742.16,UPI
+2022-03-08,Off-White Hoodie,Hoodie,Off-White,Women,Casual,UK,5,234.84,1174.2,Card
+2022-07-26,Yeezy Boost 350,Sneakers,Adidas,Women,Limited Edition,Canada,2,134.39,268.78,Cash on Delivery
+2022-02-16,Off-White Hoodie,Hoodie,Off-White,Men,Limited Edition,India,3,82.56,247.68,UPI
+2022-07-17,Off-White Hoodie,Hoodie,Off-White,Men,Limited Edition,Germany,4,191.11,764.44,Wallet
+2022-04-28,Yeezy Boost 350,Sneakers,Adidas,Unisex,Sportswear,Australia,1,70.69,70.69,UPI
+2022-03-13,Off-White Hoodie,Hoodie,Off-White,Women,Casual,UK,1,89.14,89.14,Cash on Delivery
+2022-07-24,New Era Cap,Cap,New Era,Unisex,Limited Edition,India,4,135.07,540.28,Cash on Delivery
+2022-06-11,Adidas Ultraboost,Sneakers,Adidas,Men,Streetwear,Germany,2,223.0,446.0,Cash on Delivery
+2022-06-28,Fear of God Essentials Tee,T-shirt,Essentials,Unisex,Limited Edition,UK,4,238.52,954.08,Cash on Delivery
+2022-07-12,Nike Tech Fleece,Hoodie,Nike,Women,Casual,Australia,5,120.55,602.75,UPI
+2022-02-13,New Era Cap,Cap,New Era,Women,Streetwear,Germany,4,212.66,850.64,Wallet
+2022-07-10,Off-White Hoodie,Hoodie,Off-White,Women,Streetwear,Canada,5,256.22,1281.1,Wallet
+2022-01-22,Jordan 1 High,Sneakers,Nike,Unisex,Casual,Canada,4,124.4,497.6,Wallet
+2022-06-18,Jordan 1 High,Sneakers,Nike,Women,Casual,Germany,2,80.33,160.66,Card
+2022-03-18,Supreme Hoodie,Hoodie,Supreme,Unisex,Sportswear,Canada,5,58.65,293.25,UPI
+2022-08-21,Nike Dunk Low,Sneakers,Nike,Women,Streetwear,USA,5,183.55,917.75,Cash on Delivery
+2022-07-07,Puma Joggers,Joggers,Puma,Unisex,Streetwear,Canada,2,210.77,421.54,Card
+2022-05-11,Yeezy Boost 350,Sneakers,Adidas,Unisex,Casual,Germany,4,218.82,875.28,Wallet
+2022-06-17,Fear of God Essentials Tee,T-shirt,Essentials,Women,Sportswear,UK,5,133.74,668.7,Card
+2022-05-24,Adidas Ultraboost,Sneakers,Adidas,Women,Casual,UK,1,208.47,208.47,Cash on Delivery
+2022-05-28,Off-White Hoodie,Hoodie,Off-White,Unisex,Limited Edition,Canada,1,180.42,180.42,Cash on Delivery
+2022-06-29,Puma Joggers,Joggers,Puma,Men,Casual,Japan,3,127.36,382.08,Card
+2022-05-25,Supreme Hoodie,Hoodie,Supreme,Men,Streetwear,Japan,3,149.51,448.53,Cash on Delivery
+2022-03-09,New Era Cap,Cap,New Era,Men,Casual,India,3,136.36,409.08,Card
+2022-08-21,Nike Tech Fleece,Hoodie,Nike,Unisex,Casual,UK,5,162.38,811.9,Card
+2022-05-27,Puma Joggers,Joggers,Puma,Women,Sportswear,Australia,2,259.66,519.32,Wallet
+2022-05-22,Off-White Hoodie,Hoodie,Off-White,Men,Streetwear,Canada,1,180.39,180.39,Card
+2022-06-02,Off-White Hoodie,Hoodie,Off-White,Men,Limited Edition,Canada,3,80.35,241.05,Card
+2022-03-06,Fear of God Essentials Tee,T-shirt,Essentials,Men,Streetwear,Japan,2,222.08,444.16,UPI
+2022-03-21,Puma Joggers,Joggers,Puma,Women,Sportswear,Germany,1,287.44,287.44,UPI
+2022-07-16,Fear of God Essentials Tee,T-shirt,Essentials,Unisex,Limited Edition,UK,5,137.9,689.5,UPI
+2022-03-19,Off-White Hoodie,Hoodie,Off-White,Unisex,Streetwear,Canada,3,214.68,644.04,UPI
+2022-08-04,Nike Tech Fleece,Hoodie,Nike,Women,Limited Edition,USA,2,269.88,539.76,Cash on Delivery
+2022-05-03,Jordan 1 High,Sneakers,Nike,Unisex,Sportswear,India,1,96.97,96.97,Wallet
+2022-07-01,New Era Cap,Cap,New Era,Women,Limited Edition,Australia,4,270.55,1082.2,Cash on Delivery
+2022-06-16,Adidas Ultraboost,Sneakers,Adidas,Unisex,Sportswear,Australia,3,261.31,783.93,Card
+2022-01-10,New Era Cap,Cap,New Era,Unisex,Sportswear,USA,4,56.4,225.6,Card
+2022-07-08,Yeezy Boost 350,Sneakers,Adidas,Men,Sportswear,Germany,3,239.55,718.65,Card
+2022-08-20,Jordan 1 High,Sneakers,Nike,Unisex,Limited Edition,Germany,2,94.62,189.24,Cash on Delivery
+2022-07-24,Fear of God Essentials Tee,T-shirt,Essentials,Unisex,Limited Edition,Germany,4,57.22,228.88,Cash on Delivery
+2022-07-14,Nike Dunk Low,Sneakers,Nike,Men,Limited Edition,Germany,1,170.86,170.86,Wallet
+2022-02-11,Adidas Ultraboost,Sneakers,Adidas,Men,Streetwear,Australia,3,105.79,317.37,Wallet
+2022-05-26,Adidas Ultraboost,Sneakers,Adidas,Men,Streetwear,Australia,5,112.95,564.75,Card
+2022-08-20,Off-White Hoodie,Hoodie,Off-White,Unisex,Limited Edition,USA,5,55.8,279.0,Card
+2022-05-05,Supreme Hoodie,Hoodie,Supreme,Men,Sportswear,India,1,50.1,50.1,Card
+2022-08-31,Yeezy Boost 350,Sneakers,Adidas,Men,Limited Edition,USA,1,56.49,56.49,UPI
+2022-04-21,Off-White Hoodie,Hoodie,Off-White,Men,Sportswear,Australia,5,100.65,503.25,Wallet
+2022-08-21,Adidas Ultraboost,Sneakers,Adidas,Men,Casual,Japan,2,160.44,320.88,UPI
+2022-04-15,Puma Joggers,Joggers,Puma,Women,Streetwear,Japan,4,242.44,969.76,Cash on Delivery
+2022-05-07,Yeezy Boost 350,Sneakers,Adidas,Unisex,Streetwear,Australia,2,209.81,419.62,Card
+2022-03-14,Adidas Ultraboost,Sneakers,Adidas,Men,Casual,India,4,261.96,1047.84,Cash on Delivery
+2022-08-30,Supreme Hoodie,Hoodie,Supreme,Men,Casual,USA,3,242.71,728.13,Cash on Delivery
+2022-06-06,Jordan 1 High,Sneakers,Nike,Women,Limited Edition,USA,5,299.3,1496.5,Card
+2022-08-29,Yeezy Boost 350,Sneakers,Adidas,Unisex,Streetwear,USA,4,162.85,651.4,UPI
+2022-08-02,Puma Joggers,Joggers,Puma,Unisex,Streetwear,Japan,5,215.63,1078.15,Card
+2022-05-31,Jordan 1 High,Sneakers,Nike,Women,Limited Edition,Germany,1,54.99,54.99,Cash on Delivery
+2022-02-01,Yeezy Boost 350,Sneakers,Adidas,Men,Sportswear,UK,4,185.7,742.8,Wallet
+2022-04-09,Nike Tech Fleece,Hoodie,Nike,Unisex,Streetwear,Canada,2,153.75,307.5,Cash on Delivery
+2022-03-21,Supreme Hoodie,Hoodie,Supreme,Men,Limited Edition,Australia,5,235.5,1177.5,Wallet
+2022-07-23,Supreme Hoodie,Hoodie,Supreme,Women,Casual,Canada,3,239.76,719.28,Card
+2022-02-07,Off-White Hoodie,Hoodie,Off-White,Men,Casual,USA,4,213.82,855.28,Card
+2022-04-27,Yeezy Boost 350,Sneakers,Adidas,Women,Casual,Japan,1,67.2,67.2,Wallet
+2022-03-07,New Era Cap,Cap,New Era,Men,Sportswear,Japan,4,207.05,828.2,UPI
+2022-05-05,Nike Tech Fleece,Hoodie,Nike,Unisex,Sportswear,Japan,3,257.92,773.76,Wallet
+2022-06-18,Yeezy Boost 350,Sneakers,Adidas,Women,Limited Edition,Canada,1,122.32,122.32,Cash on Delivery
+2022-05-26,Fear of God Essentials Tee,T-shirt,Essentials,Unisex,Casual,USA,1,203.63,203.63,Cash on Delivery
+2022-05-28,Jordan 1 High,Sneakers,Nike,Men,Sportswear,Canada,3,278.15,834.45,Wallet
+2022-07-03,Nike Tech Fleece,Hoodie,Nike,Men,Sportswear,Germany,3,129.78,389.34,Card
+2022-06-05,Jordan 1 High,Sneakers,Nike,Men,Casual,Australia,5,199.42,997.1,Cash on Delivery
+2022-06-26,Adidas Ultraboost,Sneakers,Adidas,Men,Limited Edition,Japan,5,98.23,491.15,Cash on Delivery
+2022-05-07,Nike Dunk Low,Sneakers,Nike,Unisex,Streetwear,Australia,1,114.47,114.47,Wallet
+2022-03-04,Puma Joggers,Joggers,Puma,Women,Streetwear,Japan,5,224.71,1123.55,UPI
+2022-01-29,Jordan 1 High,Sneakers,Nike,Unisex,Limited Edition,India,3,104.04,312.12,Cash on Delivery
+2022-03-02,Puma Joggers,Joggers,Puma,Men,Sportswear,UK,5,140.26,701.3,Card
+2022-06-01,Adidas Ultraboost,Sneakers,Adidas,Men,Streetwear,UK,5,215.38,1076.9,Card
+2022-05-15,Yeezy Boost 350,Sneakers,Adidas,Women,Limited Edition,Australia,4,127.55,510.2,Cash on Delivery
+2022-08-30,Jordan 1 High,Sneakers,Nike,Women,Limited Edition,UK,3,182.2,546.6,Card
+2022-04-04,Nike Tech Fleece,Hoodie,Nike,Men,Casual,Germany,4,246.66,986.64,Cash on Delivery
+2022-06-16,Yeezy Boost 350,Sneakers,Adidas,Women,Casual,Japan,5,262.68,1313.4,Wallet
+2022-01-24,Adidas Ultraboost,Sneakers,Adidas,Men,Limited Edition,USA,3,101.39,304.17,Cash on Delivery
+2022-02-14,Off-White Hoodie,Hoodie,Off-White,Women,Casual,Japan,1,59.05,59.05,Cash on Delivery
+2022-03-09,Off-White Hoodie,Hoodie,Off-White,Unisex,Streetwear,Canada,1,101.32,101.32,UPI
+2022-07-16,Nike Dunk Low,Sneakers,Nike,Men,Sportswear,Australia,4,228.88,915.52,Card
+2022-06-15,Nike Dunk Low,Sneakers,Nike,Women,Limited Edition,Japan,4,258.6,1034.4,Card
+2022-02-19,Adidas Ultraboost,Sneakers,Adidas,Unisex,Streetwear,Australia,4,129.95,519.8,Cash on Delivery
+2022-07-06,Adidas Ultraboost,Sneakers,Adidas,Women,Casual,Germany,5,190.03,950.15,Cash on Delivery
+2022-02-01,New Era Cap,Cap,New Era,Unisex,Casual,Canada,1,239.21,239.21,Wallet
+2022-03-25,Fear of God Essentials Tee,T-shirt,Essentials,Unisex,Streetwear,Australia,1,271.18,271.18,Cash on Delivery
+2022-02-03,Puma Joggers,Joggers,Puma,Women,Streetwear,Japan,5,140.65,703.25,Wallet
+2022-06-30,Fear of God Essentials Tee,T-shirt,Essentials,Unisex,Streetwear,UK,3,97.21,291.63,Cash on Delivery
+2022-02-12,Supreme Hoodie,Hoodie,Supreme,Men,Sportswear,UK,5,110.05,550.25,Card
+2022-07-15,Adidas Ultraboost,Sneakers,Adidas,Unisex,Casual,Germany,1,209.13,209.13,Cash on Delivery
+2022-02-06,Nike Dunk Low,Sneakers,Nike,Women,Sportswear,Australia,1,256.81,256.81,Card
+2022-01-20,Supreme Hoodie,Hoodie,Supreme,Women,Limited Edition,Germany,2,53.05,106.1,Cash on Delivery
+2022-04-03,Yeezy Boost 350,Sneakers,Adidas,Men,Sportswear,UK,4,127.11,508.44,Cash on Delivery
+2022-07-02,Nike Tech Fleece,Hoodie,Nike,Women,Sportswear,Japan,2,259.46,518.92,Wallet
+2022-03-12,Off-White Hoodie,Hoodie,Off-White,Unisex,Casual,UK,2,183.29,366.58,Wallet
+2022-01-16,Off-White Hoodie,Hoodie,Off-White,Women,Sportswear,Canada,2,130.4,260.8,Cash on Delivery
+2022-03-01,Yeezy Boost 350,Sneakers,Adidas,Men,Streetwear,Canada,5,112.04,560.2,Wallet
+2022-02-27,Puma Joggers,Joggers,Puma,Women,Casual,Japan,5,85.1,425.5,Cash on Delivery
+2022-07-02,Puma Joggers,Joggers,Puma,Unisex,Streetwear,Australia,1,180.65,180.65,Cash on Delivery
+2022-02-08,New Era Cap,Cap,New Era,Women,Casual,UK,5,147.13,735.65,Wallet
+2022-01-22,Puma Joggers,Joggers,Puma,Women,Limited Edition,Australia,3,110.78,332.34,Cash on Delivery
+2022-06-24,Nike Tech Fleece,Hoodie,Nike,Women,Streetwear,India,5,58.37,291.85,UPI
+2022-07-23,Supreme Hoodie,Hoodie,Supreme,Women,Casual,Germany,5,241.67,1208.35,Card
+2022-07-25,Off-White Hoodie,Hoodie,Off-White,Women,Limited Edition,USA,2,89.67,179.34,UPI
+2022-05-29,Nike Dunk Low,Sneakers,Nike,Women,Streetwear,Canada,1,132.09,132.09,UPI
+2022-08-04,New Era Cap,Cap,New Era,Women,Casual,Japan,2,202.18,404.36,UPI
+2022-02-12,Yeezy Boost 350,Sneakers,Adidas,Men,Casual,UK,3,90.19,270.57,Cash on Delivery
+2022-03-01,Nike Tech Fleece,Hoodie,Nike,Unisex,Streetwear,USA,2,179.28,358.56,Cash on Delivery
+2022-03-23,Nike Tech Fleece,Hoodie,Nike,Men,Sportswear,USA,5,188.61,943.05,Wallet
+2022-08-30,Fear of God Essentials Tee,T-shirt,Essentials,Men,Sportswear,UK,2,111.36,222.72,Card
+2022-02-18,New Era Cap,Cap,New Era,Women,Sportswear,UK,3,53.98,161.94,Cash on Delivery
+2022-05-28,Off-White Hoodie,Hoodie,Off-White,Unisex,Streetwear,Canada,4,240.64,962.56,Cash on Delivery
+2022-02-28,Off-White Hoodie,Hoodie,Off-White,Women,Casual,USA,5,195.57,977.85,Cash on Delivery
+2022-03-09,Nike Tech Fleece,Hoodie,Nike,Unisex,Streetwear,Canada,3,224.66,673.98,Cash on Delivery
+2022-04-28,Puma Joggers,Joggers,Puma,Women,Sportswear,Canada,3,65.2,195.6,Wallet
+2022-07-13,Adidas Ultraboost,Sneakers,Adidas,Women,Limited Edition,Canada,4,117.78,471.12,UPI
+2022-02-09,Jordan 1 High,Sneakers,Nike,Women,Streetwear,India,4,214.93,859.72,Card
+2022-08-16,Puma Joggers,Joggers,Puma,Unisex,Limited Edition,Japan,2,249.49,498.98,Cash on Delivery
+2022-06-13,Yeezy Boost 350,Sneakers,Adidas,Men,Casual,India,4,141.35,565.4,UPI
+2022-03-03,Puma Joggers,Joggers,Puma,Unisex,Limited Edition,Japan,3,264.14,792.42,Card
+2022-01-03,Fear of God Essentials Tee,T-shirt,Essentials,Unisex,Casual,UK,5,73.58,367.9,UPI
+2022-07-26,Fear of God Essentials Tee,T-shirt,Essentials,Unisex,Streetwear,USA,1,106.59,106.59,Card
+2022-02-12,Nike Tech Fleece,Hoodie,Nike,Men,Streetwear,Canada,3,59.98,179.94,UPI
+2022-03-02,Puma Joggers,Joggers,Puma,Women,Casual,Japan,3,87.81,263.43,Card
+2022-04-06,Nike Tech Fleece,Hoodie,Nike,Men,Sportswear,Japan,2,283.6,567.2,UPI
+2022-08-11,Puma Joggers,Joggers,Puma,Men,Limited Edition,Japan,2,194.31,388.62,UPI
+2022-06-23,Supreme Hoodie,Hoodie,Supreme,Unisex,Limited Edition,Japan,4,199.68,798.72,Wallet
+2022-04-08,Fear of God Essentials Tee,T-shirt,Essentials,Women,Sportswear,Japan,5,145.47,727.35,Card
+2022-01-31,Supreme Hoodie,Hoodie,Supreme,Women,Limited Edition,Australia,1,141.11,141.11,UPI
+2022-04-16,Jordan 1 High,Sneakers,Nike,Women,Casual,UK,2,188.4,376.8,Card
+2022-03-30,Supreme Hoodie,Hoodie,Supreme,Men,Limited Edition,Germany,4,145.28,581.12,Card
+2022-07-15,Adidas Ultraboost,Sneakers,Adidas,Men,Streetwear,Australia,2,277.48,554.96,Card
+2022-08-16,Nike Tech Fleece,Hoodie,Nike,Women,Limited Edition,Japan,4,153.56,614.24,Wallet
+2022-03-15,Fear of God Essentials Tee,T-shirt,Essentials,Men,Casual,Japan,2,74.83,149.66,Card
+2022-07-06,Supreme Hoodie,Hoodie,Supreme,Women,Limited Edition,Germany,1,136.8,136.8,UPI
+2022-06-26,Yeezy Boost 350,Sneakers,Adidas,Unisex,Casual,USA,3,209.69,629.07,Wallet
+2022-03-18,Supreme Hoodie,Hoodie,Supreme,Men,Casual,India,3,200.87,602.61,Cash on Delivery
+2022-02-04,Puma Joggers,Joggers,Puma,Men,Streetwear,Japan,1,221.26,221.26,Card
+2022-01-03,Nike Dunk Low,Sneakers,Nike,Women,Streetwear,USA,5,176.98,884.9,Card
+2022-08-06,New Era Cap,Cap,New Era,Men,Casual,UK,5,77.08,385.4,Wallet
+2022-03-06,Jordan 1 High,Sneakers,Nike,Men,Casual,Canada,4,239.54,958.16,Wallet
+2022-03-19,Supreme Hoodie,Hoodie,Supreme,Men,Streetwear,India,5,179.54,897.7,UPI
+2022-04-05,Off-White Hoodie,Hoodie,Off-White,Women,Streetwear,Canada,3,274.23,822.69,Cash on Delivery
+2022-03-11,Nike Tech Fleece,Hoodie,Nike,Women,Limited Edition,India,5,99.89,499.45,Cash on Delivery
+2022-04-03,Yeezy Boost 350,Sneakers,Adidas,Women,Sportswear,UK,4,148.11,592.44,Cash on Delivery
+2022-06-30,Jordan 1 High,Sneakers,Nike,Unisex,Sportswear,India,5,81.97,409.85,Cash on Delivery
+2022-01-09,Yeezy Boost 350,Sneakers,Adidas,Women,Limited Edition,India,3,291.29,873.87,Wallet
+2022-05-02,Adidas Ultraboost,Sneakers,Adidas,Men,Streetwear,Canada,5,138.95,694.75,UPI
+2022-01-27,Adidas Ultraboost,Sneakers,Adidas,Men,Streetwear,Japan,4,208.19,832.76,Wallet
+2022-07-27,Jordan 1 High,Sneakers,Nike,Men,Limited Edition,India,5,291.7,1458.5,Wallet
+2022-06-10,Fear of God Essentials Tee,T-shirt,Essentials,Women,Sportswear,Australia,3,209.89,629.67,UPI
+2022-05-04,Jordan 1 High,Sneakers,Nike,Unisex,Casual,Japan,4,171.49,685.96,Cash on Delivery
+2022-01-17,Nike Tech Fleece,Hoodie,Nike,Men,Casual,Germany,3,156.22,468.66,Wallet
+2022-06-07,Yeezy Boost 350,Sneakers,Adidas,Men,Streetwear,Japan,4,158.82,635.28,UPI
+2022-07-12,Off-White Hoodie,Hoodie,Off-White,Men,Sportswear,UK,3,218.91,656.73,Wallet
+2022-07-27,Supreme Hoodie,Hoodie,Supreme,Women,Limited Edition,Australia,5,54.88,274.4,Wallet
+2022-05-08,New Era Cap,Cap,New Era,Women,Sportswear,Canada,1,75.27,75.27,Card
+2022-06-12,Puma Joggers,Joggers,Puma,Men,Limited Edition,India,1,144.04,144.04,Cash on Delivery
+2022-07-26,Jordan 1 High,Sneakers,Nike,Men,Streetwear,Germany,4,196.45,785.8,UPI
+2022-01-17,Nike Dunk Low,Sneakers,Nike,Men,Limited Edition,USA,3,213.66,640.98,Card
+2022-08-16,Yeezy Boost 350,Sneakers,Adidas,Men,Streetwear,UK,1,164.57,164.57,Cash on Delivery
+2022-04-13,Jordan 1 High,Sneakers,Nike,Men,Casual,Canada,4,203.25,813.0,Wallet
+2022-05-13,Off-White Hoodie,Hoodie,Off-White,Women,Sportswear,UK,5,91.11,455.55,Cash on Delivery
+2022-02-17,Off-White Hoodie,Hoodie,Off-White,Unisex,Streetwear,USA,3,57.92,173.76,Cash on Delivery
+2022-07-31,Jordan 1 High,Sneakers,Nike,Women,Limited Edition,Japan,3,209.3,627.9,Wallet
+2022-08-25,Adidas Ultraboost,Sneakers,Adidas,Unisex,Casual,Germany,1,112.26,112.26,UPI
+2022-08-30,Nike Dunk Low,Sneakers,Nike,Women,Limited Edition,Canada,2,216.83,433.66,UPI
+2022-07-21,Puma Joggers,Joggers,Puma,Unisex,Limited Edition,Canada,5,68.52,342.6,UPI
+2022-08-02,Supreme Hoodie,Hoodie,Supreme,Men,Casual,Canada,1,98.04,98.04,Cash on Delivery
+2022-06-30,Fear of God Essentials Tee,T-shirt,Essentials,Men,Casual,India,5,204.35,1021.75,Wallet
+2022-04-10,Nike Dunk Low,Sneakers,Nike,Women,Streetwear,Germany,4,283.7,1134.8,Card
+2022-07-03,Off-White Hoodie,Hoodie,Off-White,Women,Limited Edition,India,4,172.52,690.08,UPI
+2022-02-26,Jordan 1 High,Sneakers,Nike,Men,Limited Edition,USA,3,51.81,155.43,Wallet
+2022-04-29,Nike Tech Fleece,Hoodie,Nike,Men,Sportswear,Japan,5,71.28,356.4,Cash on Delivery
+2022-02-24,Yeezy Boost 350,Sneakers,Adidas,Unisex,Sportswear,Canada,2,248.44,496.88,Cash on Delivery
+2022-07-03,Yeezy Boost 350,Sneakers,Adidas,Women,Sportswear,India,2,107.04,214.08,Card
+2022-08-30,Puma Joggers,Joggers,Puma,Women,Sportswear,Australia,1,132.07,132.07,Wallet
+2022-07-09,Nike Dunk Low,Sneakers,Nike,Men,Casual,Japan,3,118.37,355.11,Card
+2022-04-18,Nike Tech Fleece,Hoodie,Nike,Women,Streetwear,Germany,5,243.74,1218.7,Wallet
+2022-01-16,Nike Dunk Low,Sneakers,Nike,Unisex,Limited Edition,Japan,5,150.02,750.1,Cash on Delivery
+2022-04-02,Nike Tech Fleece,Hoodie,Nike,Women,Streetwear,Australia,3,73.31,219.93,Wallet
+2022-08-25,Puma Joggers,Joggers,Puma,Men,Casual,Australia,2,176.24,352.48,Cash on Delivery
+2022-05-27,Adidas Ultraboost,Sneakers,Adidas,Women,Sportswear,UK,5,135.5,677.5,UPI
+2022-08-18,Fear of God Essentials Tee,T-shirt,Essentials,Men,Sportswear,Canada,4,250.12,1000.48,Card
+2022-07-03,Yeezy Boost 350,Sneakers,Adidas,Women,Casual,Australia,4,145.89,583.56,Card
+2022-05-07,Nike Tech Fleece,Hoodie,Nike,Unisex,Casual,USA,4,281.54,1126.16,Wallet
+2022-06-25,Jordan 1 High,Sneakers,Nike,Unisex,Casual,Australia,4,121.42,485.68,Card
+2022-06-03,Jordan 1 High,Sneakers,Nike,Women,Streetwear,India,4,265.91,1063.64,UPI
+2022-01-25,Fear of God Essentials Tee,T-shirt,Essentials,Women,Limited Edition,Germany,1,240.42,240.42,Card
+2022-01-08,Adidas Ultraboost,Sneakers,Adidas,Women,Sportswear,USA,5,275.27,1376.35,Card
+2022-08-09,Supreme Hoodie,Hoodie,Supreme,Women,Streetwear,India,3,154.79,464.37,Card
+2022-08-13,Supreme Hoodie,Hoodie,Supreme,Unisex,Sportswear,India,5,139.0,695.0,UPI
+2022-06-21,Nike Tech Fleece,Hoodie,Nike,Unisex,Streetwear,Australia,3,79.27,237.81,Card
+2022-08-23,Off-White Hoodie,Hoodie,Off-White,Men,Casual,Canada,2,237.1,474.2,Cash on Delivery
+2022-01-29,Off-White Hoodie,Hoodie,Off-White,Men,Casual,UK,4,228.46,913.84,Cash on Delivery
+2022-06-12,Supreme Hoodie,Hoodie,Supreme,Men,Sportswear,Canada,4,52.42,209.68,Wallet
+2022-08-26,Nike Dunk Low,Sneakers,Nike,Men,Limited Edition,Japan,3,270.52,811.56,UPI
+2022-01-08,Jordan 1 High,Sneakers,Nike,Unisex,Limited Edition,UK,4,119.36,477.44,Cash on Delivery
+2022-01-23,New Era Cap,Cap,New Era,Women,Limited Edition,UK,3,125.26,375.78,Wallet
+2022-06-02,Off-White Hoodie,Hoodie,Off-White,Women,Casual,Canada,3,296.55,889.65,Card
+2022-06-13,Puma Joggers,Joggers,Puma,Women,Casual,UK,1,56.73,56.73,Wallet
+2022-01-18,Supreme Hoodie,Hoodie,Supreme,Unisex,Casual,UK,1,91.56,91.56,UPI
+2022-04-11,New Era Cap,Cap,New Era,Women,Streetwear,USA,2,152.54,305.08,Card
+2022-07-04,New Era Cap,Cap,New Era,Women,Casual,Australia,4,61.37,245.48,Cash on Delivery
+2022-03-07,Off-White Hoodie,Hoodie,Off-White,Men,Streetwear,Japan,3,162.36,487.08,Wallet
+2022-06-29,Supreme Hoodie,Hoodie,Supreme,Men,Streetwear,USA,2,257.5,515.0,UPI
+2022-05-21,Nike Dunk Low,Sneakers,Nike,Women,Casual,Germany,4,202.28,809.12,Card
+2022-07-07,New Era Cap,Cap,New Era,Unisex,Casual,India,1,224.83,224.83,Cash on Delivery
+2022-04-02,Puma Joggers,Joggers,Puma,Men,Streetwear,Canada,3,256.27,768.81,Cash on Delivery
+2022-03-26,Yeezy Boost 350,Sneakers,Adidas,Women,Limited Edition,UK,2,277.26,554.52,UPI
+2022-07-04,Puma Joggers,Joggers,Puma,Unisex,Streetwear,Canada,3,271.19,813.57,Cash on Delivery
+2022-01-12,Off-White Hoodie,Hoodie,Off-White,Men,Streetwear,Canada,3,205.62,616.86,Wallet
+2022-08-01,Jordan 1 High,Sneakers,Nike,Men,Streetwear,USA,4,130.97,523.88,Card
+2022-03-26,Fear of God Essentials Tee,T-shirt,Essentials,Men,Streetwear,Canada,5,267.71,1338.55,Cash on Delivery
+2022-01-04,Nike Dunk Low,Sneakers,Nike,Men,Sportswear,USA,4,151.37,605.48,UPI
+2022-03-07,Off-White Hoodie,Hoodie,Off-White,Men,Sportswear,Canada,5,89.84,449.2,Wallet
+2022-04-25,Puma Joggers,Joggers,Puma,Men,Streetwear,Canada,1,276.64,276.64,Card
+2022-03-15,Puma Joggers,Joggers,Puma,Unisex,Limited Edition,India,3,203.41,610.23,Card
+2022-08-10,Nike Tech Fleece,Hoodie,Nike,Men,Limited Edition,UK,2,195.85,391.7,Wallet
+2022-08-04,Puma Joggers,Joggers,Puma,Men,Sportswear,Australia,2,288.87,577.74,UPI
+2022-05-11,Nike Tech Fleece,Hoodie,Nike,Men,Sportswear,Australia,1,65.45,65.45,Cash on Delivery
+2022-01-01,Yeezy Boost 350,Sneakers,Adidas,Unisex,Casual,USA,1,202.42,202.42,Wallet
+2022-03-05,Nike Tech Fleece,Hoodie,Nike,Men,Streetwear,Australia,2,51.11,102.22,Cash on Delivery
+2022-07-24,New Era Cap,Cap,New Era,Men,Limited Edition,Japan,1,292.68,292.68,UPI
+2022-08-10,Puma Joggers,Joggers,Puma,Women,Casual,USA,2,175.51,351.02,UPI
+2022-03-13,Yeezy Boost 350,Sneakers,Adidas,Women,Sportswear,Germany,4,211.37,845.48,Card
+2022-03-23,Nike Tech Fleece,Hoodie,Nike,Unisex,Casual,Germany,1,209.78,209.78,UPI
+2022-05-12,Nike Dunk Low,Sneakers,Nike,Unisex,Casual,India,1,59.85,59.85,Wallet
+2022-07-17,Nike Dunk Low,Sneakers,Nike,Unisex,Streetwear,Canada,3,156.27,468.81,UPI
+2022-03-08,Yeezy Boost 350,Sneakers,Adidas,Unisex,Limited Edition,Australia,2,175.0,350.0,Card
+2022-08-05,Off-White Hoodie,Hoodie,Off-White,Men,Casual,UK,2,88.0,176.0,Wallet
+2022-07-02,Nike Dunk Low,Sneakers,Nike,Men,Casual,UK,4,293.33,1173.32,Card
+2022-07-17,Nike Dunk Low,Sneakers,Nike,Unisex,Limited Edition,Germany,5,285.37,1426.85,UPI
+2022-01-15,Off-White Hoodie,Hoodie,Off-White,Women,Sportswear,USA,5,220.59,1102.95,Wallet
+2022-03-03,Nike Dunk Low,Sneakers,Nike,Men,Streetwear,Australia,5,214.0,1070.0,Wallet
+2022-08-18,Yeezy Boost 350,Sneakers,Adidas,Unisex,Limited Edition,Germany,5,208.24,1041.2,Card
+2022-06-07,Supreme Hoodie,Hoodie,Supreme,Unisex,Casual,Germany,4,133.7,534.8,UPI
+2022-08-24,Fear of God Essentials Tee,T-shirt,Essentials,Men,Casual,India,2,158.7,317.4,Wallet
+2022-01-19,Nike Tech Fleece,Hoodie,Nike,Women,Streetwear,UK,2,244.13,488.26,Cash on Delivery
+2022-08-19,Nike Tech Fleece,Hoodie,Nike,Women,Casual,Australia,5,147.99,739.95,UPI
+2022-08-11,Fear of God Essentials Tee,T-shirt,Essentials,Unisex,Casual,Japan,1,157.81,157.81,Cash on Delivery
+2022-03-24,Puma Joggers,Joggers,Puma,Unisex,Streetwear,Germany,2,212.76,425.52,Wallet
+2022-01-17,Adidas Ultraboost,Sneakers,Adidas,Women,Casual,Australia,3,225.9,677.7,Wallet
+2022-02-09,New Era Cap,Cap,New Era,Men,Streetwear,Canada,3,112.98,338.94,Wallet
+2022-05-13,New Era Cap,Cap,New Era,Unisex,Casual,Canada,2,100.84,201.68,Cash on Delivery
+2022-02-03,Jordan 1 High,Sneakers,Nike,Women,Casual,Canada,4,292.75,1171.0,Wallet
+2022-02-08,Nike Tech Fleece,Hoodie,Nike,Men,Streetwear,UK,3,82.62,247.86,Cash on Delivery
+2022-07-18,Off-White Hoodie,Hoodie,Off-White,Men,Sportswear,Australia,3,246.13,738.39,UPI
+2022-04-29,Nike Dunk Low,Sneakers,Nike,Men,Streetwear,Germany,4,168.01,672.04,Wallet
+2022-08-26,Adidas Ultraboost,Sneakers,Adidas,Men,Sportswear,Japan,1,93.08,93.08,Wallet
+2022-01-14,Off-White Hoodie,Hoodie,Off-White,Women,Limited Edition,Australia,3,161.55,484.65,UPI
+2022-02-25,New Era Cap,Cap,New Era,Men,Casual,Germany,3,228.84,686.52,UPI
+2022-05-23,Off-White Hoodie,Hoodie,Off-White,Women,Sportswear,USA,4,221.31,885.24,Card
+2022-07-26,New Era Cap,Cap,New Era,Women,Sportswear,UK,2,287.68,575.36,Cash on Delivery
+2022-01-16,Nike Dunk Low,Sneakers,Nike,Women,Limited Edition,UK,5,168.7,843.5,Wallet
+2022-06-01,Fear of God Essentials Tee,T-shirt,Essentials,Women,Streetwear,UK,3,153.82,461.46,Cash on Delivery
+2022-02-13,Adidas Ultraboost,Sneakers,Adidas,Unisex,Casual,Japan,4,281.0,1124.0,UPI
+2022-03-28,Puma Joggers,Joggers,Puma,Women,Streetwear,India,5,112.4,562.0,Wallet
+2022-01-20,Off-White Hoodie,Hoodie,Off-White,Unisex,Limited Edition,Canada,1,233.16,233.16,Cash on Delivery
+2022-02-27,Yeezy Boost 350,Sneakers,Adidas,Unisex,Sportswear,USA,5,248.71,1243.55,Wallet
+2022-05-26,Nike Tech Fleece,Hoodie,Nike,Men,Casual,Australia,5,157.2,786.0,Wallet
+2022-01-29,Yeezy Boost 350,Sneakers,Adidas,Men,Limited Edition,Australia,4,113.75,455.0,Wallet
+2022-04-14,Yeezy Boost 350,Sneakers,Adidas,Women,Streetwear,Germany,1,109.66,109.66,Cash on Delivery
+2022-06-06,Puma Joggers,Joggers,Puma,Women,Casual,India,1,81.57,81.57,UPI
+2022-02-08,Fear of God Essentials Tee,T-shirt,Essentials,Men,Casual,Canada,2,247.2,494.4,UPI
+2022-05-06,Puma Joggers,Joggers,Puma,Women,Sportswear,Japan,4,250.26,1001.04,Card
+2022-01-06,Adidas Ultraboost,Sneakers,Adidas,Unisex,Sportswear,Germany,1,137.2,137.2,Card
+2022-03-18,Adidas Ultraboost,Sneakers,Adidas,Women,Streetwear,Canada,3,164.06,492.18,UPI
+2022-02-07,Off-White Hoodie,Hoodie,Off-White,Unisex,Streetwear,USA,4,198.45,793.8,Wallet
+2022-06-05,Puma Joggers,Joggers,Puma,Unisex,Limited Edition,Germany,2,162.48,324.96,Cash on Delivery
+2022-06-13,Supreme Hoodie,Hoodie,Supreme,Men,Casual,UK,4,243.48,973.92,Wallet
+2022-08-10,Nike Dunk Low,Sneakers,Nike,Women,Limited Edition,UK,4,183.4,733.6,Card
+2022-05-05,Off-White Hoodie,Hoodie,Off-White,Men,Streetwear,UK,1,271.44,271.44,Cash on Delivery
+2022-03-01,Off-White Hoodie,Hoodie,Off-White,Unisex,Limited Edition,USA,2,135.48,270.96,Cash on Delivery
+2022-01-21,Fear of God Essentials Tee,T-shirt,Essentials,Men,Sportswear,Japan,5,148.46,742.3,Card
+2022-07-10,New Era Cap,Cap,New Era,Men,Casual,Canada,5,251.06,1255.3,UPI
+2022-03-12,New Era Cap,Cap,New Era,Unisex,Streetwear,Germany,2,195.41,390.82,Card
+2022-01-22,Yeezy Boost 350,Sneakers,Adidas,Unisex,Limited Edition,India,4,206.29,825.16,Wallet
+2022-05-13,New Era Cap,Cap,New Era,Women,Streetwear,Japan,4,146.09,584.36,Cash on Delivery
+2022-05-26,Yeezy Boost 350,Sneakers,Adidas,Women,Limited Edition,USA,1,284.3,284.3,Card
+2022-01-14,Puma Joggers,Joggers,Puma,Unisex,Limited Edition,Australia,5,289.47,1447.35,Card
+2022-03-10,Nike Tech Fleece,Hoodie,Nike,Women,Sportswear,UK,2,218.25,436.5,Wallet
+2022-07-08,Jordan 1 High,Sneakers,Nike,Men,Streetwear,India,4,204.62,818.48,Wallet
+2022-01-03,Puma Joggers,Joggers,Puma,Women,Limited Edition,Japan,2,267.42,534.84,Cash on Delivery
+2022-04-02,Supreme Hoodie,Hoodie,Supreme,Men,Casual,Germany,1,144.59,144.59,UPI
+2022-08-17,Yeezy Boost 350,Sneakers,Adidas,Men,Sportswear,Canada,2,80.47,160.94,Card
+2022-04-26,Nike Tech Fleece,Hoodie,Nike,Men,Casual,Canada,2,98.17,196.34,Card
+2022-06-15,Off-White Hoodie,Hoodie,Off-White,Men,Sportswear,UK,2,63.76,127.52,Cash on Delivery
+2022-04-06,Supreme Hoodie,Hoodie,Supreme,Men,Casual,UK,2,157.12,314.24,Card
+2022-04-07,Supreme Hoodie,Hoodie,Supreme,Women,Casual,Germany,5,293.21,1466.05,Cash on Delivery
+2022-03-30,Off-White Hoodie,Hoodie,Off-White,Men,Streetwear,UK,2,142.25,284.5,UPI
+2022-07-02,Off-White Hoodie,Hoodie,Off-White,Men,Sportswear,Japan,1,86.17,86.17,Wallet
+2022-07-09,Nike Tech Fleece,Hoodie,Nike,Women,Limited Edition,Canada,3,172.37,517.11,Card
+2022-02-05,Off-White Hoodie,Hoodie,Off-White,Men,Sportswear,India,3,236.05,708.15,UPI
+2022-07-11,Nike Tech Fleece,Hoodie,Nike,Men,Streetwear,UK,3,256.72,770.16,UPI
+2022-06-02,Nike Dunk Low,Sneakers,Nike,Men,Limited Edition,UK,4,205.64,822.56,Wallet
+2022-05-29,Off-White Hoodie,Hoodie,Off-White,Men,Streetwear,Germany,4,68.18,272.72,Cash on Delivery
+2022-03-21,New Era Cap,Cap,New Era,Men,Limited Edition,Australia,4,68.97,275.88,Card
+2022-06-06,Nike Tech Fleece,Hoodie,Nike,Unisex,Limited Edition,Germany,5,123.23,616.15,Wallet
+2022-08-24,Nike Dunk Low,Sneakers,Nike,Women,Streetwear,Australia,5,273.0,1365.0,Card
+2022-02-10,Yeezy Boost 350,Sneakers,Adidas,Women,Casual,Canada,3,225.84,677.52,Card
+2022-03-01,Jordan 1 High,Sneakers,Nike,Women,Sportswear,Canada,3,235.36,706.08,Wallet
+2022-03-17,Yeezy Boost 350,Sneakers,Adidas,Women,Sportswear,India,5,189.94,949.7,Cash on Delivery
+2022-01-03,Off-White Hoodie,Hoodie,Off-White,Women,Casual,USA,3,110.2,330.6,Card
+2022-06-29,Off-White Hoodie,Hoodie,Off-White,Unisex,Sportswear,Germany,2,54.76,109.52,Wallet
+2022-06-02,Supreme Hoodie,Hoodie,Supreme,Women,Sportswear,Australia,1,296.56,296.56,UPI
+2022-06-04,Yeezy Boost 350,Sneakers,Adidas,Women,Sportswear,Australia,1,296.51,296.51,Wallet
+2022-04-03,Puma Joggers,Joggers,Puma,Men,Casual,India,1,89.5,89.5,UPI
+2022-03-16,Yeezy Boost 350,Sneakers,Adidas,Unisex,Casual,UK,3,280.64,841.92,Card
+2022-02-15,Nike Tech Fleece,Hoodie,Nike,Women,Streetwear,Canada,5,234.28,1171.4,Cash on Delivery
+2022-01-01,Nike Dunk Low,Sneakers,Nike,Women,Streetwear,Japan,2,294.89,589.78,Wallet
+2022-03-10,Jordan 1 High,Sneakers,Nike,Women,Sportswear,USA,1,208.24,208.24,Cash on Delivery
+2022-04-08,Jordan 1 High,Sneakers,Nike,Men,Casual,India,5,94.25,471.25,Wallet
+2022-08-03,Nike Tech Fleece,Hoodie,Nike,Women,Casual,Germany,5,259.0,1295.0,Card
+2022-05-05,Puma Joggers,Joggers,Puma,Women,Casual,Germany,4,299.73,1198.92,Cash on Delivery
+2022-05-19,Adidas Ultraboost,Sneakers,Adidas,Men,Casual,Canada,5,71.26,356.3,Cash on Delivery
+2022-07-17,Nike Dunk Low,Sneakers,Nike,Women,Limited Edition,Japan,5,270.14,1350.7,Wallet
