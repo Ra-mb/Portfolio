@@ -93,7 +93,7 @@ df.to_excel('sneakers.excel', index=False)
 ### 5. Data Analysis & Findings
 
 
-  ![Database](Images/Sneakers Analysis.jpg)
+  ![Dashboard](Images/Sneakers Analysis.jpg)
 
 ## Findings
 
