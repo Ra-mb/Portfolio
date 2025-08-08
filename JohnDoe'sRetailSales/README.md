@@ -21,7 +21,7 @@ This project is designed to demonstrate analysis Python, Power BI and techniques
 
 - **Database Creation**: The project starts by import a database from `sneakers.csv`.
 
-  ![Database](Images/dataset.png)
+  ![Database](Image/dataset.png)
 
 
 ### 2. Data Cleaning
@@ -93,7 +93,7 @@ df.to_excel('sneakers.excel', index=False)
 ### 5. Data Analysis & Findings
 
 
-  ![Dashboard](Images/Sneakers Analysis.jpg)
+  ![Dashboard](Image/Sneakers Analysis.jpg)
 
 ## Findings
 
