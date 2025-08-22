@@ -80,7 +80,7 @@ df.to_excel("Adidas.xlsx", index=False)
 - Payment Methods: Cash on Delivery leads in sales, followed by Wallet and Card. UPI lags behind.
 - Top Products by Gender: Sneakers and Hoodies dominate in the male and unisex segments. Female customers tend to prefer Hoodies.
 - Best-Selling Categories: Streetwear and Limited Edition account for 56% of total sales.
-- Monthly Sales Trends (2020): Sales consistently increased from January to November, indicating a seasonal pattern.
+- Monthly Sales Trends (2020 - 2021): Sales consistently increased from January to November, indicating a seasonal pattern.
 - Brand Performance: Nike and Adidas show consistent performance. Off-White excels in the male segment, while Puma and Supreme are more favored by female customers.
 
 
