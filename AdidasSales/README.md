@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-**Project Title**: Retail Sales Analysis  
+**Project Title**: Adidas Retail Sales Analysis  
 **Database**: `Adidass`
 
 This project aims to analyze Adidas sales data using an end-to-end approach: starting with data exploration and cleaning in Python, followed by interactive visualization in Power BI. The final output is a dashboard that supports data-driven business decision-making.
@@ -72,8 +72,11 @@ df.to_excel("Adidas.xlsx", index=False)
 
 ### 6. Data Analysis & Findings
 
+**Dashboard Sales 2020**
+  ![Dashboard](Image/Dashboard2020.jpeg)
 
-  ![Dashboard](Image/Dashboard.jpeg)
+**Dashboard Sales 2021**
+  ![Dashboard](Image/Dashboard2021.jpeg)
 
 ## Findings
 
