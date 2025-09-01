@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-**Project Title**: Superstore Sales Analysis  
+**Project Title**: Sushi Restaurant Sales Analysis  
 **Database**: `Sushi`
 
 This project is designed to demonstrate analysis Python, Power BI and techniques typically used by data analysts to explore, clean, and analyze superstore sales data. The project involves import database from csv file and performing exploratory data analysis (EDA).
