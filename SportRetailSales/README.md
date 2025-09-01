@@ -26,11 +26,11 @@ This project is designed to demonstrate analysis Python, Power BI and techniques
 
 ### 2. Data Cleaning
 
-- **Create a new database**: Create a new database to do a data transformations, cleaning etc to make sure if any misquery, i don't lose the data.
+- **Import database**: Create a new database to do a data transformations, cleaning etc.
 - **Remove Duplicate**: Remove any duplicate record.
 - **Standardize Data**: Ensure the data ready for analysis.
 - **Null Value Check**: Check for any null values in the dataset and delete records with missing data.
-- **Remove Columns**: Remove column that unused such as row_num. 
+- **Remove Columns**: Remove column that unused. 
 
 ```jupyterlab
 
