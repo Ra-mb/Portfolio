@@ -1,15 +1,15 @@
-# John Doe's Retail Sales
+# Superstore Sales
 
 ## Project Overview
 
-**Project Title**: Retail Sales Analysis  
-**Database**: `sneakers`
+**Project Title**: Superstore Sales Analysis  
+**Database**: `superstore`
 
-This project is designed to demonstrate analysis Python, Power BI and techniques typically used by data analysts to explore, clean, and analyze retail sales data. The project involves import database from csv file, performing exploratory data analysis (EDA), and answering specific business questions through SQL queries.
+This project is designed to demonstrate analysis Python, Power BI and techniques typically used by data analysts to explore, clean, and analyze superstore sales data. The project involves import database from csv file, performing exploratory data analysis (EDA), and answering specific business questions through SQL queries.
 
 ## Objectives
 
-1. **Import retail sales database**: Import retail sales database from csv.
+1. **Import retail sales database**: Import superstore sales database from csv.
 2. **Data Cleaning**: Identify and remove any records with missing or null values.
 3. **Standardizing Data**: Identify and standardize any records to give a better visualization.
 4. **Exploratory Data Analysis (EDA)**: Perform basic exploratory data analysis to understand the dataset.
@@ -19,61 +19,45 @@ This project is designed to demonstrate analysis Python, Power BI and techniques
 
 ### 1. Database Setup
 
-- **Database Creation**: The project starts by import a database from `sneakers.csv`.
+- **Database Creation**: The project starts by import a database from `superstore.csv`.
 
-  ![Database](Image/dataset.png)
+  ![Database](Image/Dataset.png)
 
 
 ### 2. Data Cleaning
 
-- **Create a new database**: Create a new database to do a data transformations, cleaning etc to make sure if any misquery, i don't lose the data.
+- **Import database**: Import database to do a data transformations, cleaning etc..
 - **Remove Duplicate**: Remove any duplicate record.
 - **Standardize Data**: Ensure the data ready for analysis.
 - **Null Value Check**: Check for any null values in the dataset and delete records with missing data.
-- **Remove Columns**: Remove column that unused such as row_num. 
+- **Remove Columns**: Remove column that unused. 
 
 ```jupyterlab
 
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
-df = pd.read_csv(r"C:\Users\user\OneDrive\Documents\Dataset\New Portfolio\Sneakers Sales\sneakers.csv")
+df = pd.read_csv(r"C:\Users\user\OneDrive\Documents\Dataset\New Portfolio\Superstore\superstore.csv", encoding='latin1')
 df
 ```
 
 ### 3. Standardizing Data
 
 ```jupyter lab
-df['Date'] = pd.to_datetime(df['Date'], format='%Y/%m/%d').dt.normalize()
+df['Ship Date'] = pd.to_datetime(df['Ship Date'])
 
-# Hitung Q1, Q3, dan IQR
-Q1 = df[['Quantity', 'Unit Price ($)', 'Amount ($)']].quantile(0.25)
-Q3 = df[['Quantity', 'Unit Price ($)', 'Amount ($)']].quantile(0.75)
-IQR = Q3 - Q1
+df['Order Date'] = pd.to_datetime(df['Order Date'])
 
-# Filter baris yang mengandung outlier
-outliers = df[
-    ((df[['Quantity', 'Unit Price ($)', 'Amount ($)']] < (Q1 - 1.5 * IQR)) |
-     (df[['Quantity', 'Unit Price ($)', 'Amount ($)']] > (Q3 + 1.5 * IQR))).any(axis=1)
-]
+df['Order Year'] = df['Order Date'].dt.year
+df['Ship Year'] = df['Ship Date'].dt.year
 
-# Cetak hasil outlier
-print("Jumlah outlier terdeteksi:", len(outliers))
-print(outliers[['Date', 'Product Name', 'Quantity', 'Unit Price ($)', 'Amount ($)']])
+df.isnull().sum()
 
+df.duplicated().sum()
 
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-
-# Boxplot untuk Quantity
-sns.boxplot(x=df['Quantity'])
-plt.title('Boxplot Quantity')
-plt.show()
-
-# Boxplot untuk Unit Price
-sns.boxplot(x=df['Unit Price ($)'])
-plt.title('Boxplot Unit Price')
-plt.show()
+profit_per_year = df.groupby('Order Year')['Profit'].sum().reset_index()
+sns.lineplot(data=profit_per_year, x='Order Year', y='Profit')
 ```
 ### 4. Exploratory Data Analysis
 ```jupyter lab
@@ -81,45 +65,51 @@ df.info()
 
 df.describe
 
-df.dtypes
+df.head()
 
 df.isnull().sum()
 
 df.duplicated().sum()
 
-df.to_excel('sneakers.excel', index=False)
+df.to_excel('superstore.xlsx', index=False)
 ```
 
-### 5. Data Analysis & Findings
+### 5. Remove Columns
+```jupyter lab
+df.drop(columns = ['Row ID', 'Order ID', 'Customer ID', 'Product ID', 'Postal Code'], inplace=True)
+```
+
+### 6. Data Analysis & Findings
 
 
-  ![Dashboard](Image/dashboard.jpg)
+  ![Dashboard](Image/Dashboard.png)
 
 ## Findings
 
-1. Preferred Payment Methods
-- Cash on Delivery leads with $4.0M in sales, followed by Wallet and Card (each at $3.6M).
-- UPI lags behind at $2.6M, suggesting customers favor traditional and wallet-based payments over direct bank transfers.
+1. Profit by Shipping Method
+- Standard Class appears to be the most dominant shipping method in terms of both volume and profit.
+- Same Day and First Class may incur higher costs, but it's worth analyzing whether their profit margins justify the operational expenses.
+  
+2. Profit by Region
+- The West and East regions show high profitability, indicating strong market potential.
+- The South region is relatively lower, possibly due to purchasing power or suboptimal distribution strategies.
+  
+3. Profit by City
+- Cities like New York, Los Angeles, and Seattle lead in profit, suggesting sales concentration in metropolitan areas.
+- Cities with lower profit could be targeted for specialized marketing or promotional strategies.
+  
+4. Profit Trend (2014–2017)
+- Profit shows a consistently upward trend, indicating healthy business growth.
+- Any spikes or dips in specific years should be further analyzed to understand external factors (e.g., promotions, price changes, seasonality).
+  
+5. Product Categories
+- Although not directly shown in the charts, the category filters (Furniture, Office Supplies, Technology) allow for segmented product analysis.
+- A deeper dive can reveal which categories contribute most to profit and sales.
 
-2. Top Products by Gender
-- Sneakers and Hoodies dominate across male and unisex segments.
-- Female customers prefer Hoodies ($1.2M) and Sneakers ($1M), but overall purchase volumes are lower than male counterparts.
-- Items like Joggers, Caps, and T-shirts contribute less to total sales.
-
-3. Best-Selling Categories
-- Streetwear and Limited Edition are the top performers (each at 28% of total sales).
-- Casual and Sportswear trail behind at 22%, indicating a stronger consumer interest in edgy and exclusive fashion.
-
-4. 2022 Monthly Sales Trends
-- Sales steadily rise from January ($1.5M) to a peak in November ($2.8M).
-- Clear seasonal pattern suggests opportunities for targeted promotions—especially toward year-end.
-
-5. Brand Performance by Gender
-- Nike and Adidas perform well across all gender segments.
-- Off-White excels with male customers (42.24%) but underperforms in unisex.
-- Puma, Supreme, and New Era show stronger traction among female shoppers.
-- Essentials dominates male sales (45.33%) but has limited appeal among women.
-
+## Strategic Reccomendations
+- Focus shipping strategy on Standard Class for cost efficiency and volume.
+- Strengthen market penetration in the South region and low-profit cities.
+- Conduct further category-level analysis to identify top-performing and underperforming products.
 
 My social media:
 
