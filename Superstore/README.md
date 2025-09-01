@@ -21,7 +21,7 @@ This project is designed to demonstrate analysis Python, Power BI and techniques
 
 - **Database Creation**: The project starts by import a database from `superstore.csv`.
 
-  ![Database](Image/Dataset.png)
+  ![Database](Images/Dataset.png)
 
 
 ### 2. Data Cleaning
@@ -82,7 +82,7 @@ df.drop(columns = ['Row ID', 'Order ID', 'Customer ID', 'Product ID', 'Postal Co
 ### 6. Data Analysis & Findings
 
 
-  ![Dashboard](Image/Dashboard.png)
+  ![Dashboard](Images/Dashboard.png)
 
 ## Findings
 
