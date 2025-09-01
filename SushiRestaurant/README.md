@@ -1,15 +1,15 @@
-# Superstore Sales
+# Sushi Restaurant Sales
 
 ## Project Overview
 
 **Project Title**: Superstore Sales Analysis  
-**Database**: `superstore`
+**Database**: `Sushi`
 
-This project is designed to demonstrate analysis Python, Power BI and techniques typically used by data analysts to explore, clean, and analyze superstore sales data. The project involves import database from csv file, performing exploratory data analysis (EDA), and answering specific business questions through SQL queries.
+This project is designed to demonstrate analysis Python, Power BI and techniques typically used by data analysts to explore, clean, and analyze superstore sales data. The project involves import database from csv file and performing exploratory data analysis (EDA).
 
 ## Objectives
 
-1. **Import retail sales database**: Import superstore sales database from csv.
+1. **Import retail sales database**: Import Sushi Restaurant sales database from csv.
 2. **Data Cleaning**: Identify and remove any records with missing or null values.
 3. **Standardizing Data**: Identify and standardize any records to give a better visualization.
 4. **Exploratory Data Analysis (EDA)**: Perform basic exploratory data analysis to understand the dataset.
@@ -19,7 +19,7 @@ This project is designed to demonstrate analysis Python, Power BI and techniques
 
 ### 1. Database Setup
 
-- **Database Creation**: The project starts by import a database from `superstore.csv`.
+- **Database Creation**: The project starts by import a database from `sushi_restaurant.csv`.
 
   ![Database](Images/Dataset.png)
 
@@ -35,30 +35,21 @@ This project is designed to demonstrate analysis Python, Power BI and techniques
 ```jupyterlab
 
 import pandas as pd
-import seaborn as sns
 import matplotlib.pyplot as plt
+import seaborn as sns
 
-df = pd.read_csv(r"C:\Users\user\OneDrive\Documents\Dataset\New Portfolio\Superstore\superstore.csv", encoding='latin1')
+df = pd.read_csv(r"C:\Users\user\OneDrive\Documents\Dataset\New Portfolio\Tasty Sushi\sushi_restaurant.csv")
 df
 ```
 
 ### 3. Standardizing Data
 
 ```jupyter lab
-df['Ship Date'] = pd.to_datetime(df['Ship Date'])
+df['Order Date'] = pd.to_datetime(df['Order Date'], format='mixed').dt.strftime('%d/%m/%Y')
 
-df['Order Date'] = pd.to_datetime(df['Order Date'])
-
-df['Order Year'] = df['Order Date'].dt.year
-df['Ship Year'] = df['Ship Date'].dt.year
-
-df.isnull().sum()
-
-df.duplicated().sum()
-
-profit_per_year = df.groupby('Order Year')['Profit'].sum().reset_index()
-sns.lineplot(data=profit_per_year, x='Order Year', y='Profit')
+df['Year'] = df['Order Date'].dt.year
 ```
+
 ### 4. Exploratory Data Analysis
 ```jupyter lab
 df.info()
@@ -69,14 +60,24 @@ df.head()
 
 df.isnull().sum()
 
+df.shape
+
 df.duplicated().sum()
 
-df.to_excel('superstore.xlsx', index=False)
+df['Category'].value_counts()
+
+df['Payment Method'].value_counts()
+
+sns.barplot(data = df, x= 'Category', y = 'Total Price')
+
+sns.lineplot(data = df, x = 'Year', y = 'Total Price')
+
+df.to_excel('Sushi.xlsx', index=False)
 ```
 
 ### 5. Remove Columns
 ```jupyter lab
-df.drop(columns = ['Row ID', 'Order ID', 'Customer ID', 'Product ID', 'Postal Code'], inplace=True)
+df.drop(columns = ['Order ID', 'Order Date', 'Order Time'], inplace=True)
 ```
 
 ### 6. Data Analysis & Findings
@@ -86,30 +87,36 @@ df.drop(columns = ['Row ID', 'Order ID', 'Customer ID', 'Product ID', 'Postal Co
 
 ## Findings
 
-1. Profit by Shipping Method
-- Standard Class appears to be the most dominant shipping method in terms of both volume and profit.
-- Same Day and First Class may incur higher costs, but it's worth analyzing whether their profit margins justify the operational expenses.
+1. Top-Selling Categories
+- Ramen is the highest-selling category, especially through Eat In orders.
+- Followed by Sashimi and Temaki as strong performers.
+- Street Food has the lowest sales, particularly in Takeaway orders.
   
-2. Profit by Region
-- The West and East regions show high profitability, indicating strong market potential.
-- The South region is relatively lower, possibly due to purchasing power or suboptimal distribution strategies.
+2. Category Growth
+- Ramen shows the highest growth rate at 50.3%, indicating rising consumer interest.
+- Categories like Nigiri and Street Food show low or negative growth, possibly due to lack of promotion or appeal.
   
-3. Profit by City
-- Cities like New York, Los Angeles, and Seattle lead in profit, suggesting sales concentration in metropolitan areas.
-- Cities with lower profit could be targeted for specialized marketing or promotional strategies.
+3. Customer Reviews
+- Most customers gave 5-star ratings (52.6%), with an average rating of 4.2, suggesting high satisfaction.
+- Ramen has the highest average rating, while Street Food ranks lowest (3.0).
   
-4. Profit Trend (2014–2017)
-- Profit shows a consistently upward trend, indicating healthy business growth.
-- Any spikes or dips in specific years should be further analyzed to understand external factors (e.g., promotions, price changes, seasonality).
+4. Yearly Sales Trends
+- Sales in 2022 increased by 50.7%, while 2021 saw a drop of 50.3%—possibly reflecting post-pandemic recovery or improved business strategy.
   
-5. Product Categories
-- Although not directly shown in the charts, the category filters (Furniture, Office Supplies, Technology) allow for segmented product analysis.
-- A deeper dive can reveal which categories contribute most to profit and sales.
+5. Sales Distribution by City
+- Cities like Preston, Manchester, and Leeds dominate ramen sales.
+- California Roll is popular in Bolton, Bury, and Burnley, showing regional preferences.
+  
+6. Order Type and Gender
+- Eat In orders outperform Takeaway, especially among female customers.
+- This could inform strategies for dine-in promotions or space optimization.
+
 
 ## Strategic Reccomendations
-- Focus shipping strategy on Standard Class for cost efficiency and volume.
-- Strengthen market penetration in the South region and low-profit cities.
-- Conduct further category-level analysis to identify top-performing and underperforming products.
+- Focus on expanding Ramen and Sashimi categories, especially for dine-in experiences.
+- Reevaluate the Street Food strategy—consider improving quality, pricing, or marketing.
+- Leverage high-performing cities for loyalty programs or expansion.
+- Use review data to maintain quality and uplift lower-rated categories.
 
 My social media:
 
