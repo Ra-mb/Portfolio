@@ -106,7 +106,7 @@ df.drop(columns = ['Row ID', 'Order ID', 'Customer ID', 'Product ID', 'Postal Co
 - Although not directly shown in the charts, the category filters (Furniture, Office Supplies, Technology) allow for segmented product analysis.
 - A deeper dive can reveal which categories contribute most to profit and sales.
 
-## Strategic Reccomendations
+## Strategic Recommendations
 - Focus shipping strategy on Standard Class for cost efficiency and volume.
 - Strengthen market penetration in the South region and low-profit cities.
 - Conduct further category-level analysis to identify top-performing and underperforming products.
