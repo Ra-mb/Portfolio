@@ -80,7 +80,7 @@ df.to_excel('foodpanda.xlsx', index=False)
 
 ### 6. Data Analysis & Findings
 
-  **Order & Customer Overview**
+## Order & Customer Overview
 
   ![Dashboard](Images/Dashboard1.png)
 
@@ -114,7 +114,7 @@ The number of active and inactive customers is almost the same → potential chu
 - Strengthen the loyalty program to re-engage inactive customers and reduce churn.
 
 
-  **Revenue & Churn Analysis**
+## Revenue & Churn Analysis
 
 ![Dashboard](Images/Dashboard2.png)
 
