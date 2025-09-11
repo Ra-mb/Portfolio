@@ -73,7 +73,7 @@ df.to_excel('mall.xlsx', index=False)
 ### 6. Data Analysis & Findings
 
 
-  ![Dashboard](Images/Dashboard.png)
+  ![Dashboard](Images/Dashboard.jpeg)
 
 ## Findings
 
