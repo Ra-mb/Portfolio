@@ -112,7 +112,7 @@ df.drop(columns = ['Order ID', 'Order Date', 'Order Time'], inplace=True)
 - This could inform strategies for dine-in promotions or space optimization.
 
 
-## Strategic Reccomendations
+## Strategic Recommendations
 - Focus on expanding Ramen and Sashimi categories, especially for dine-in experiences.
 - Reevaluate the Street Food strategy—consider improving quality, pricing, or marketing.
 - Leverage high-performing cities for loyalty programs or expansion.
