@@ -1,15 +1,15 @@
-# Sushi Restaurant Sales
+# Mall Customer
 
 ## Project Overview
 
-**Project Title**: Sushi Restaurant Sales Analysis  
-**Database**: `Sushi`
+**Project Title**: Mall Customer Analysis  
+**Database**: `Mall`
 
 This project is designed to demonstrate analysis Python, Power BI and techniques typically used by data analysts to explore, clean, and analyze superstore sales data. The project involves import database from csv file and performing exploratory data analysis (EDA).
 
 ## Objectives
 
-1. **Import retail sales database**: Import Sushi Restaurant sales database from csv.
+1. **Import database**: Import Mall Customer database from csv.
 2. **Data Cleaning**: Identify and remove any records with missing or null values.
 3. **Standardizing Data**: Identify and standardize any records to give a better visualization.
 4. **Exploratory Data Analysis (EDA)**: Perform basic exploratory data analysis to understand the dataset.
@@ -35,19 +35,15 @@ This project is designed to demonstrate analysis Python, Power BI and techniques
 ```jupyterlab
 
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 
-df = pd.read_csv(r"C:\Users\user\OneDrive\Documents\Dataset\New Portfolio\Tasty Sushi\sushi_restaurant.csv")
+df = pd.read_csv(r"C:\Users\user\OneDrive\Documents\Dataset\New Portfolio\Mall Customer\Mall.csv")
 df
 ```
 
 ### 3. Standardizing Data
 
 ```jupyter lab
-df['Order Date'] = pd.to_datetime(df['Order Date'], format='mixed').dt.strftime('%d/%m/%Y')
-
-df['Year'] = df['Order Date'].dt.year
+df['Age Group'] = df['Age Group'].fillna('Unknown')
 ```
 
 ### 4. Exploratory Data Analysis
@@ -60,24 +56,18 @@ df.head()
 
 df.isnull().sum()
 
-df.shape
-
 df.duplicated().sum()
 
-df['Category'].value_counts()
+df['Preferred Category'].value_counts()
 
-df['Payment Method'].value_counts()
+import matplotlib.pyplot as plt
 
-sns.barplot(data = df, x= 'Category', y = 'Total Price')
+avg_loyalty = df.groupby('Age Group')['Loyalty Years'].mean().reset_index()
 
-sns.lineplot(data = df, x = 'Year', y = 'Total Price')
+plt.bar(avg_loyalty['Age Group'], avg_loyalty['Loyalty Years'])
+plt.show()
 
-df.to_excel('Sushi.xlsx', index=False)
-```
-
-### 5. Remove Columns
-```jupyter lab
-df.drop(columns = ['Order ID', 'Order Date', 'Order Time'], inplace=True)
+df.to_excel('mall.xlsx', index=False)
 ```
 
 ### 6. Data Analysis & Findings
@@ -87,36 +77,68 @@ df.drop(columns = ['Order ID', 'Order Date', 'Order Time'], inplace=True)
 
 ## Findings
 
-1. Top-Selling Categories
-- Ramen is the highest-selling category, especially through Eat In orders.
-- Followed by Sashimi and Temaki as strong performers.
-- Street Food has the lowest sales, particularly in Takeaway orders.
-  
-2. Category Growth
-- Ramen shows the highest growth rate at 50.3%, indicating rising consumer interest.
-- Categories like Nigiri and Street Food show low or negative growth, possibly due to lack of promotion or appeal.
-  
-3. Customer Reviews
-- Most customers gave 5-star ratings (52.6%), with an average rating of 4.2, suggesting high satisfaction.
-- Ramen has the highest average rating, while Street Food ranks lowest (3.0).
-  
-4. Yearly Sales Trends
-- Sales in 2022 increased by 50.7%, while 2021 saw a drop of 50.3%—possibly reflecting post-pandemic recovery or improved business strategy.
-  
-5. Sales Distribution by City
-- Cities like Preston, Manchester, and Leeds dominate ramen sales.
-- California Roll is popular in Bolton, Bury, and Burnley, showing regional preferences.
-  
-6. Order Type and Gender
-- Eat In orders outperform Takeaway, especially among female customers.
-- This could inform strategies for dine-in promotions or space optimization.
+🔹 Income vs Spending Score
+
+- No linear pattern → high income does not always mean a high spending score.
+- There is a cluster of middle-income customers with high spending scores → potential targets for loyalty programs.
+- Customers with high income but low spending → likely to be more cautious with purchases.
+
+🔹 Loyalty by Age Group & Gender
+
+- Customers aged 36–50 have the longest loyalty (both male and female).
+- Younger customers (18–25) → show lower loyalty.
+- Insight: Long-term membership programs are best targeted at customers aged 36+.
+
+🔹 Customer Distribution by Gender & Preferred Category
+
+- Female: dominant in Electronics and Fashion.
+- Male: dominant in Electronics and Budget.
+- Luxury category is relatively balanced.
+
+🔹 Customer Count by Age Group
+
+- The majority of customers are in the 36–50 age group, followed by 26–35.
+- The 65+ segment is the smallest → senior customers rarely shop.
+
+🔹 Estimated Earnings by Age Group
+
+- Customers aged 36–50 and 51–65 have the highest earnings.
+- Young customers (18–25) have the lowest earnings.
+
+🔹 Customer Gender Distribution
+
+- 56% Female vs 44% Male → female customers slightly outnumber male customers.
+
+## Executive Summary
+
+The analysis highlights that customers aged 36–50 are the most valuable segment, with the highest loyalty, strong earnings, and the largest customer base. Women represent 56% of customers, with strong preferences for Electronics and Fashion, while men lean toward Electronics and Budget categories. Younger customers (18–25) show lower loyalty and earnings, requiring different engagement strategies. Additionally, mid-income customers with high spending potential should be prioritized for premium loyalty programs.
 
 
-## Strategic Reccomendations
-- Focus on expanding Ramen and Sashimi categories, especially for dine-in experiences.
-- Reevaluate the Street Food strategy—consider improving quality, pricing, or marketing.
-- Leverage high-performing cities for loyalty programs or expansion.
-- Use review data to maintain quality and uplift lower-rated categories.
+## Strategic Recomendations
+
+1. Focus on the 36–50 age group
+    - They represent the largest customer base with high loyalty and strong earnings.
+    - Prioritize long-term membership and exclusive offers for this segment.
+
+2. Engage younger customers (18–25)
+    - Introduce gamified loyalty programs, discounts, or student packages.
+    - Build habits early to increase retention over time.
+
+3. Leverage female customer dominance (56%)
+    - Strengthen product bundles in Electronics and Fashion.
+    - Create targeted campaigns highlighting trends and lifestyle benefits.
+
+4. Optimize for high-spending middle-income customers
+    - Offer premium loyalty tiers or cashback programs to retain this cluster.
+    - Use personalized marketing to encourage repeat purchases.
+
+5. Tailor male customer strategies
+    - Focus on Electronics and Budget categories with value-driven offers.
+    - Position bundles and tech-oriented promotions for this segment.
+
+6. Develop senior-friendly programs (65+)
+    - Special discounts or simplified shopping experiences to attract older customers.
+    - Collaborate with healthcare or lifestyle partners to increase relevance.
 
 My social media:
 
