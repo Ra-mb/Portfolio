@@ -19,7 +19,7 @@ This project is designed to demonstrate analysis Python, Power BI and techniques
 
 ### 1. Database Setup
 
-- **Database Creation**: The project starts by import a database from `foodpanda.csv`.
+- **Database Creation**: The project starts by import a database from `foodpanda.xlsx`.
 
   ![Database](Images/Dataset.png)
 
