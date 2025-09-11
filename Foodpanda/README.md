@@ -1,53 +1,55 @@
-# Sushi Restaurant Sales
+# Foodpanda Analytics Dashboard
 
 ## Project Overview
 
-**Project Title**: Sushi Restaurant Sales Analysis  
-**Database**: `Sushi`
+**Project Title**: Foodpanda Delivery Analysis  
+**Database**: `foodpanda`
 
 This project is designed to demonstrate analysis Python, Power BI and techniques typically used by data analysts to explore, clean, and analyze superstore sales data. The project involves import database from csv file and performing exploratory data analysis (EDA).
 
 ## Objectives
 
-1. **Import retail sales database**: Import Sushi Restaurant sales database from csv.
+1. **Import database**: Import Foodpanda database from csv.
 2. **Data Cleaning**: Identify and remove any records with missing or null values.
 3. **Standardizing Data**: Identify and standardize any records to give a better visualization.
 4. **Exploratory Data Analysis (EDA)**: Perform basic exploratory data analysis to understand the dataset.
-5. **Business Analysis**: Use Power BI to answer specific business questions and derive insights from the sales data.
+5. **Business Analysis**: Use Power BI derive insights from the delivery data.
 
 ## Project Structure
 
 ### 1. Database Setup
 
-- **Database Creation**: The project starts by import a database from `sushi_restaurant.csv`.
+- **Database Creation**: The project starts by import a database from `foodpanda.csv`.
 
   ![Database](Images/Dataset.png)
 
 
 ### 2. Data Cleaning
 
-- **Import database**: Import database to do a data transformations, cleaning etc..
+- **Import database**: Import database to do a data transformations, cleaning etc.
 - **Remove Duplicate**: Remove any duplicate record.
 - **Standardize Data**: Ensure the data ready for analysis.
-- **Null Value Check**: Check for any null values in the dataset and delete records with missing data.
-- **Remove Columns**: Remove column that unused. 
+- **Explore Data** : To understand how the data is. 
+ 
 
 ```jupyterlab
 
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 
-df = pd.read_csv(r"C:\Users\user\OneDrive\Documents\Dataset\New Portfolio\Tasty Sushi\sushi_restaurant.csv")
+df = pd.read_csv(r"C:\Users\user\OneDrive\Documents\Dataset\New Portfolio\Foodpanda\Foodpanda.csv")
 df
 ```
 
 ### 3. Standardizing Data
 
 ```jupyter lab
-df['Order Date'] = pd.to_datetime(df['Order Date'], format='mixed').dt.strftime('%d/%m/%Y')
+df['signup_date'] = pd.to_datetime(df['signup_date'], format='mixed')
 
-df['Year'] = df['Order Date'].dt.year
+df['order_date'] = pd.to_datetime(df['order_date'], format='mixed')
+
+df['last_order_date'] = pd.to_datetime(df['last_order_date'], format='mixed')
+
+df['rating_date'] = pd.to_datetime(df['rating_date'], format='mixed')
 ```
 
 ### 4. Exploratory Data Analysis
@@ -56,67 +58,94 @@ df.info()
 
 df.describe
 
-df.head()
-
-df.isnull().sum()
-
-df.shape
-
 df.duplicated().sum()
 
-df['Category'].value_counts()
+df.head()
 
-df['Payment Method'].value_counts()
+df['age'].value_counts()
 
-sns.barplot(data = df, x= 'Category', y = 'Total Price')
+df['city'].value_counts()
 
-sns.lineplot(data = df, x = 'Year', y = 'Total Price')
+df['delivery_status'].value_counts()
 
-df.to_excel('Sushi.xlsx', index=False)
-```
+import seaborn as sns
+sns.countplot(data=df, x='delivery_status')
 
-### 5. Remove Columns
-```jupyter lab
-df.drop(columns = ['Order ID', 'Order Date', 'Order Time'], inplace=True)
+sns.barplot(data=df, x='churned', y='loyalty_points', estimator='mean')
+
+sns.scatterplot(data=df, x='age', y='loyalty_points')
+
+df.to_excel('foodpanda.xlsx', index=False)
 ```
 
 ### 6. Data Analysis & Findings
 
+  **Order & Customer Overview**
 
-  ![Dashboard](Images/Dashboard.png)
+  ![Dashboard](Images/Dashboard1.png)
 
 ## Findings
 
-1. Top-Selling Categories
-- Ramen is the highest-selling category, especially through Eat In orders.
-- Followed by Sashimi and Temaki as strong performers.
-- Street Food has the lowest sales, particularly in Takeaway orders.
-  
-2. Category Growth
-- Ramen shows the highest growth rate at 50.3%, indicating rising consumer interest.
-- Categories like Nigiri and Street Food show low or negative growth, possibly due to lack of promotion or appeal.
-  
-3. Customer Reviews
-- Most customers gave 5-star ratings (52.6%), with an average rating of 4.2, suggesting high satisfaction.
-- Ramen has the highest average rating, while Street Food ranks lowest (3.0).
-  
-4. Yearly Sales Trends
-- Sales in 2022 increased by 50.7%, while 2021 saw a drop of 50.3%—possibly reflecting post-pandemic recovery or improved business strategy.
-  
-5. Sales Distribution by City
-- Cities like Preston, Manchester, and Leeds dominate ramen sales.
-- California Roll is popular in Bolton, Bury, and Burnley, showing regional preferences.
-  
-6. Order Type and Gender
-- Eat In orders outperform Takeaway, especially among female customers.
-- This could inform strategies for dine-in promotions or space optimization.
+1. Order Trend by Year
+Orders increased in 2024 but dropped again in 2025 → possibly due to seasonality or stronger competition.
 
+2. Customer Distribution by Gender
+Customer distribution is relatively balanced across Male, Female, and Other (around 33% each). → Marketing strategies can be designed to be gender-neutral.
+
+3. Revenue by Food Category
+Italian & Continental dominate revenue (≈1M). Dessert generates the lowest revenue.
+
+4. Orders by Payment Method
+Cash is still the most used payment method (2,039), compared to Card (2,002) and Wallet (1,959).
+
+5. Customer Distribution by City
+Multan has the highest orders (1.3K), while Karachi has the lowest (1.1K).
+
+6. Loyalty Points (Active vs Inactive)
+The number of active and inactive customers is almost the same → potential churn risk if engagement is not improved.
 
 ## Strategic Reccomendations
-- Focus on expanding Ramen and Sashimi categories, especially for dine-in experiences.
-- Reevaluate the Street Food strategy—consider improving quality, pricing, or marketing.
-- Leverage high-performing cities for loyalty programs or expansion.
-- Use review data to maintain quality and uplift lower-rated categories.
+- FFocus promotions in cities with lower orders (Karachi, Islamabad) to balance customer distribution.
+  
+- Encourage digital payment adoption through special promotions for Wallet/Card users.
+  
+- Boost dessert sales with menu bundling (e.g., “Buy 1 main dish, get 50% off dessert”).
+  
+- Strengthen the loyalty program to re-engage inactive customers and reduce churn.
+
+
+  **Revenue & Churn Analysis**
+
+![Dashboard](Images/Dashboard2.png)
+
+## Findings
+
+1. Delivery Status
+Delivered: 2,060, Delayed: 1,972, Cancelled: 1,968 → high delay and cancellation rates.
+
+2. Loyalty Points by Age
+Teenagers hold higher loyalty points compared to Adults & Seniors → younger segment is more engaged.
+
+3. Total Revenue by Dish & Restaurant
+Pasta (3.1M) & Pizza Hut (3.0M) are top performers. McDonald’s & Burger generate lower revenue.
+
+4. Total Revenue by Year
+Revenue increased in 2024, dropped in 2025, but the forecast for 2026 shows sharp growth.
+
+5. Customer Distribution by Age
+Adults (34.37%) are slightly more dominant compared to Teenagers & Seniors (~33% each).
+
+## Strategic Reccomendations
+
+- Improve delivery processes → high delays & cancellations could reduce customer satisfaction.
+  
+- Target marketing towards Adults (34%) while keeping Teenagers engaged due to their higher loyalty points.
+
+- Optimize best-selling menu items (Pasta & Pizza Hut) → can be used as a signature campaign.
+  
+- Revitalize underperforming items (McDonald’s, Burger) with special promotions.
+  
+- Closely monitor 2026 revenue forecast → ensure key drivers (promotion, operations, supply chain) are sustained.
 
 My social media:
 
