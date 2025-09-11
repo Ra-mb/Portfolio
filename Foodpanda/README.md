@@ -135,7 +135,7 @@ Revenue increased in 2024, dropped in 2025, but the forecast for 2026 shows shar
 5. Customer Distribution by Age
 Adults (34.37%) are slightly more dominant compared to Teenagers & Seniors (~33% each).
 
-## Strategic Reccomendations
+## Strategic Reccommendations
 
 - Improve delivery processes → high delays & cancellations could reduce customer satisfaction.
   
