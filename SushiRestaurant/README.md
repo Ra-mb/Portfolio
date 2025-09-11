@@ -9,7 +9,7 @@ This project is designed to demonstrate analysis Python, Power BI and techniques
 
 ## Objectives
 
-1. **Import retail sales database**: Import Sushi Restaurant sales database from csv.
+1. **Import database**: Import Sushi Restaurant sales database from csv.
 2. **Data Cleaning**: Identify and remove any records with missing or null values.
 3. **Standardizing Data**: Identify and standardize any records to give a better visualization.
 4. **Exploratory Data Analysis (EDA)**: Perform basic exploratory data analysis to understand the dataset.
