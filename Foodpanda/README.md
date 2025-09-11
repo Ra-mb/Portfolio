@@ -105,7 +105,7 @@ Multan has the highest orders (1.3K), while Karachi has the lowest (1.1K).
 The number of active and inactive customers is almost the same → potential churn risk if engagement is not improved.
 
 ## Strategic Reccomendations
-- FFocus promotions in cities with lower orders (Karachi, Islamabad) to balance customer distribution.
+- Focus promotions in cities with lower orders (Karachi, Islamabad) to balance customer distribution.
   
 - Encourage digital payment adoption through special promotions for Wallet/Card users.
   
