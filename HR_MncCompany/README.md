@@ -83,7 +83,7 @@ df.drop(columns=['Unnamed: 0', 'Employee_ID'], inplace=True)
 
 | Dataset | Size | Link |
 |---------|------|------|
-| PBIX File | 120 MB | [Download](https://drive.google.com/drive/u/0/folders/10ZV9ySWatL_s5oT-V2YUG-CDHTZp6seB) |
+| PBIX File | 39 MB | [Download](https://drive.google.com/drive/u/0/folders/10ZV9ySWatL_s5oT-V2YUG-CDHTZp6seB) |
 
 
   ![Dashboard](Images/Dashboard.jpeg)
