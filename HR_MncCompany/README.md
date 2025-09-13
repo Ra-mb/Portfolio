@@ -23,7 +23,7 @@ This project is designed to demonstrate analysis Python, Power BI and techniques
 - 
 | Dataset | Size | Link |
 |---------|------|------|
-| Customer Segmentation | 399 MB | [Download]([https://drive.google.com/your-link](https://drive.google.com/file/d/1jBj6kIHWFxFNDSo6NLidQygizxnm_PjX/view?usp=drive_link)) |
+| Dataset | 399 MB | [Download](https://drive.google.com/drive/u/0/folders/10ZV9ySWatL_s5oT-V2YUG-CDHTZp6seB) |
 
   ![Database](Images/Dataset.png)
 
@@ -83,7 +83,7 @@ df.drop(columns=['Unnamed: 0', 'Employee_ID'], inplace=True)
 
 | Dataset | Size | Link |
 |---------|------|------|
-| PBIX File | 120 MB | [Download]([https://drive.google.com/your-link](https://drive.google.com/file/d/1nD7Z69nn0WqV27K9vSDJyTys3axAcotJ/view?usp=drive_link)) |
+| PBIX File | 120 MB | [Download](https://drive.google.com/drive/u/0/folders/10ZV9ySWatL_s5oT-V2YUG-CDHTZp6seB) |
 
 
   ![Dashboard](Images/Dashboard.jpeg)
