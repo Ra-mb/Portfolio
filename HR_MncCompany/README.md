@@ -1,25 +1,26 @@
-# Sushi Restaurant Sales
+# HR MultiCompany 
 
 ## Project Overview
 
-**Project Title**: Sushi Restaurant Sales Analysis  
-**Database**: `Sushi`
+**Project Title**: HR MultiCompany Analysis  
+**Database**: `HR`
 
 This project is designed to demonstrate analysis Python, Power BI and techniques typically used by data analysts to explore, clean, and analyze superstore sales data. The project involves import database from csv file and performing exploratory data analysis (EDA).
 
 ## Objectives
 
-1. **Import retail sales database**: Import Sushi Restaurant sales database from csv.
+1. **Import database**: Import HR database from csv.
 2. **Data Cleaning**: Identify and remove any records with missing or null values.
 3. **Standardizing Data**: Identify and standardize any records to give a better visualization.
 4. **Exploratory Data Analysis (EDA)**: Perform basic exploratory data analysis to understand the dataset.
-5. **Business Analysis**: Use Power BI to answer specific business questions and derive insights from the sales data.
+5. **HR Analysis**: Use Power BI to answer specific HR questions and derive insights from the employee data.
 
 ## Project Structure
 
 ### 1. Database Setup
 
-- **Database Creation**: The project starts by import a database from `sushi_restaurant.csv`.
+- **Database Creation**: The project starts by import a database from `HR.csv`.
+[![Download Dataset](https://img.shields.io/badge/Download-Dataset-blue.svg)]([https://drive.google.com/your-link](https://drive.google.com/file/d/1jBj6kIHWFxFNDSo6NLidQygizxnm_PjX/view?usp=drive_link))
 
   ![Database](Images/Dataset.png)
 
@@ -35,26 +36,25 @@ This project is designed to demonstrate analysis Python, Power BI and techniques
 ```jupyterlab
 
 import pandas as pd
-import matplotlib.pyplot as plt
 import seaborn as sns
+import numpy as np
+import matplotlib.pyplot as plt
 
-df = pd.read_csv(r"C:\Users\user\OneDrive\Documents\Dataset\New Portfolio\Tasty Sushi\sushi_restaurant.csv")
+df = pd.read_csv(r"C:\Users\user\OneDrive\Documents\Dataset\New Portfolio\HR Data\HR_Data.csv")
 df
 ```
 
 ### 3. Standardizing Data
 
 ```jupyter lab
-df['Order Date'] = pd.to_datetime(df['Order Date'], format='mixed').dt.strftime('%d/%m/%Y')
-
-df['Year'] = df['Order Date'].dt.year
+df[['Location','Country']] = df['Location'].str.split(',', expand=True)
 ```
 
 ### 4. Exploratory Data Analysis
 ```jupyter lab
 df.info()
 
-df.describe
+df.describe()
 
 df.head()
 
@@ -64,59 +64,62 @@ df.shape
 
 df.duplicated().sum()
 
-df['Category'].value_counts()
 
-df['Payment Method'].value_counts()
 
-sns.barplot(data = df, x= 'Category', y = 'Total Price')
+sns.barplot(data=df, x='Department', y='Salary_INR', estimator=np.mean)
 
-sns.lineplot(data = df, x = 'Year', y = 'Total Price')
-
-df.to_excel('Sushi.xlsx', index=False)
+df.to_csv('HR.csv', index=False)
 ```
 
 ### 5. Remove Columns
 ```jupyter lab
-df.drop(columns = ['Order ID', 'Order Date', 'Order Time'], inplace=True)
+df.drop(columns=['Unnamed: 0', 'Employee_ID'], inplace=True)
 ```
 
 ### 6. Data Analysis & Findings
 
+[![Download Dataset](https://img.shields.io/badge/Download-Dataset-blue.svg)]([[https://drive.google.com/your-link](https://drive.google.com/file/d/1jBj6kIHWFxFNDSo6NLidQygizxnm_PjX/view?usp=drive_link](https://drive.google.com/file/d/1nD7Z69nn0WqV27K9vSDJyTys3axAcotJ/view?usp=drive_link)))
 
-  ![Dashboard](Images/Dashboard.png)
+  ![Dashboard](Images/Dashboard.jpeg)
 
 ## Findings
 
-1. Top-Selling Categories
-- Ramen is the highest-selling category, especially through Eat In orders.
-- Followed by Sashimi and Temaki as strong performers.
-- Street Food has the lowest sales, particularly in Takeaway orders.
-  
-2. Category Growth
-- Ramen shows the highest growth rate at 50.3%, indicating rising consumer interest.
-- Categories like Nigiri and Street Food show low or negative growth, possibly due to lack of promotion or appeal.
-  
-3. Customer Reviews
-- Most customers gave 5-star ratings (52.6%), with an average rating of 4.2, suggesting high satisfaction.
-- Ramen has the highest average rating, while Street Food ranks lowest (3.0).
-  
-4. Yearly Sales Trends
-- Sales in 2022 increased by 50.7%, while 2021 saw a drop of 50.3%—possibly reflecting post-pandemic recovery or improved business strategy.
-  
-5. Sales Distribution by City
-- Cities like Preston, Manchester, and Leeds dominate ramen sales.
-- California Roll is popular in Bolton, Bury, and Burnley, showing regional preferences.
-  
-6. Order Type and Gender
-- Eat In orders outperform Takeaway, especially among female customers.
-- This could inform strategies for dine-in promotions or space optimization.
+1. High-level KPI
+- Total Employee Salary: 2T → very large payroll budget.
+- Average Performance: 3 (scale 1–5) → workforce has average performance, room for improvement.
+- Average Experience: 5 years → employees are mostly mid-level, not too junior.
 
+2. Salary by Employee Join Year
+- Strong salary growth between 2014–2022, with a peak in 2020–2022.
+- After 2023, total salary declined → possibly due to attrition or reduced hiring.
 
-## Strategic Reccomendations
-- Focus on expanding Ramen and Sashimi categories, especially for dine-in experiences.
-- Reevaluate the Street Food strategy—consider improving quality, pricing, or marketing.
-- Leverage high-performing cities for loyalty programs or expansion.
-- Use review data to maintain quality and uplift lower-rated categories.
+3. Salary by Experience (Years)
+- Salary remains stable for employees with 0–5 years of experience.
+- Sharp drop after 10 years of experience → indicates fewer senior employees in the company.
+
+4. Salary by Performance Rating
+- Employees with rating 4 take the highest share of salary → most high-performing employees are in this group.
+- Surprisingly, rating 5 salaries are lower than rating 4 → suggests fewer employees achieve top ratings.
+
+5. Salary by Job Title
+- Software Engineers account for the largest payroll share (360B).
+- Followed by Sales Executives, IT Managers, and Operations Executives.
+- Functions like HR and Marketing contribute relatively less.
+
+6. Salary by Department & Work Mode
+- IT Department dominates payroll (407B).
+- Followed by Sales (190B) and Operations (128B).
+- HR & Marketing remain small.
+- Majority of employees are on-site, while remote work is still limited.
+
+## Overall Insights
+
+ 1. Workforce composition: heavily IT-driven, especially Software Engineers.
+ 2. Experience distribution: mostly mid-level, very few senior employees.
+ 3. Performance impact: rating 4 employees dominate payroll, rating 5 is rare.
+ 4. Salary trend: rising until 2022, then dropping, likely due to turnover or reduced recruitment.
+ 5. Work mode: company still prioritizes on-site work over remote.
+
 
 My social media:
 
