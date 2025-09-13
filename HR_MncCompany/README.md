@@ -20,7 +20,10 @@ This project is designed to demonstrate analysis Python, Power BI and techniques
 ### 1. Database Setup
 
 - **Database Creation**: The project starts by import a database from `HR.csv`.
-[![Download Dataset](https://img.shields.io/badge/Download-Dataset-blue.svg)]([https://drive.google.com/your-link](https://drive.google.com/file/d/1jBj6kIHWFxFNDSo6NLidQygizxnm_PjX/view?usp=drive_link))
+- 
+| Dataset | Size | Link |
+|---------|------|------|
+| Customer Segmentation | 399 MB | [Download]([https://drive.google.com/your-link](https://drive.google.com/file/d/1jBj6kIHWFxFNDSo6NLidQygizxnm_PjX/view?usp=drive_link)) |
 
   ![Database](Images/Dataset.png)
 
@@ -78,7 +81,10 @@ df.drop(columns=['Unnamed: 0', 'Employee_ID'], inplace=True)
 
 ### 6. Data Analysis & Findings
 
-[![Download Dataset](https://img.shields.io/badge/Download-Dataset-blue.svg)]([[https://drive.google.com/your-link](https://drive.google.com/file/d/1jBj6kIHWFxFNDSo6NLidQygizxnm_PjX/view?usp=drive_link](https://drive.google.com/file/d/1nD7Z69nn0WqV27K9vSDJyTys3axAcotJ/view?usp=drive_link)))
+| Dataset | Size | Link |
+|---------|------|------|
+| PBIX File | 120 MB | [Download]([https://drive.google.com/your-link](https://drive.google.com/file/d/1nD7Z69nn0WqV27K9vSDJyTys3axAcotJ/view?usp=drive_link)) |
+
 
   ![Dashboard](Images/Dashboard.jpeg)
 
